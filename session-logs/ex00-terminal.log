@@ -1,0 +1,289 @@
+Script started on 2026-07-12 16:28:30+08:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="132" LINES="40"]
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way[00m$ [7mcat /etc/os-release[27mcat /etc/os-release
+[?2004lPRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way[00m$ uname -a
+[?2004lLinux ysyxDev 6.8.0-124-generic #124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC  x86_64 x86_64 x86_64 GNU/Linux
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way[00m$ [7m{[27m
+[7m    echo "===== Linux Distribution ====="[27m
+[7m    cat /etc/os-release[27m
+[7m    echo[27m
+[7m    echo "===== Kernel Information ====="[27m
+[7m    uname -a[27m
+[7m} 2>&1 | tee exercises/ex00/logs/system-info.log[27m[A[A[A[A[A[A{
+    echo "===== Linux Distribution ====="
+    cat /etc/os-release
+    echo
+    echo "===== Kernel Information ====="
+    uname -a
+} 2>&1 | tee exercises/ex00/logs/system-info.log
+[?2004l===== Linux Distribution =====
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+
+===== Kernel Information =====
+Linux ysyxDev 6.8.0-124-generic #124~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May 26 21:05:19 UTC  x86_64 x86_64 x86_64 GNU/Linux
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way[00m$ [7msudo apt update[27msudo apt update
+[?2004l[sudo] password for joujou: 
+[33m0% [Working][0m            Hit:1 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy InRelease
+[33m0% [Connecting to packages.microsoft.com (13.107.213.74)][0m                                                         Get:2 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates InRelease [128 kB]
+[33m0% [2 InRelease 5,186 B/128 kB 4%] [Connected to packages.microsoft.com (13.107.213.74)][0m[33m                                                                                        0% [Waiting for headers] [Waiting for headers][0m                                              Get:3 https://packages.microsoft.com/repos/code stable InRelease [3,590 B]
+[33m0% [Waiting for headers] [3 InRelease 3,590 B/3,590 B 100%][0m[33m                                                           0% [Waiting for headers][0m                        Get:4 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-backports InRelease [127 kB]
+[33m0% [4 InRelease 2,426 B/127 kB 2%][0m[33m0% [4 InRelease 127 kB/127 kB 100%][0m[33m                                   0% [Waiting for headers][0m                        Get:5 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-security InRelease [129 kB]
+[33m0% [5 InRelease 2,426 B/129 kB 2%][0m[33m                                  0% [Working][0m[33m0% [Working][0m            Get:6 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/main i386 Packages [1,040 kB]
+[33m0% [6 Packages 3,805 B/1,040 kB 0%][0m[33m0% [6 Packages 485 kB/1,040 kB 47%][0m[33m                                   0% [Waiting for headers][0m                        Get:7 https://packages.microsoft.com/repos/code stable/main amd64 Packages [26.8 kB]
+[33m                        0% [Working][0m[33m0% [6 Packages store 0 B] [Waiting for headers][0m                                               Get:8 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/main amd64 Packages [3,631 kB]
+[33m0% [6 Packages store 0 B] [8 Packages 1,044 B/3,631 kB 0%][0m[33m                                                          0% [8 Packages 3,277 kB/3,631 kB 90%][0m[33m0% [7 Packages store 0 B] [8 Packages 3,338 kB/3,631 kB 92%][0m[33m                                                            0% [8 Packages 3,563 kB/3,631 kB 98%][0m[33m0% [8 Packages 3,631 kB/3,631 kB 100%][0m                                      Get:9 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/main amd64 DEP-11 Metadata [117 kB]
+                                      Get:10 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/universe amd64 Packages [1,277 kB]
+[33m                                      0% [10 Packages 909 kB/1,277 kB 71%][0m[33m0% [8 Packages store 0 B] [10 Packages 1,235 kB/1,277 kB 97%][0m[33m                                                             0% [8 Packages store 0 B][0m                         Get:11 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/universe i386 Packages [814 kB]
+[33m0% [8 Packages store 0 B] [11 Packages 22.3 kB/814 kB 3%][0m                                                         Get:12 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/universe amd64 DEP-11 Metadata [360 kB]
+[33m0% [8 Packages store 0 B] [12 Components-amd64 155 kB/360 kB 43%][0m[33m                                                                 0% [8 Packages store 0 B][0m                         Get:13 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/multiverse amd64 DEP-11 Metadata [940 B]
+[33m0% [8 Packages store 0 B] [Waiting for headers][0m                                               Get:14 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-backports/main amd64 DEP-11 Metadata [5,772 B]
+[33m0% [8 Packages store 0 B] [14 Components-amd64 2,429 B/5,772 B 42%][0m[33m                                                                   0% [8 Packages store 0 B] [Waiting for headers][0m                                               Get:15 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-backports/universe amd64 DEP-11 Metadata [12.4 kB]
+[33m0% [8 Packages store 0 B] [15 Components-amd64 11.5 kB/12.4 kB 93%][0m[33m                                                                   0% [8 Packages store 0 B][0m[33m97% [8 Packages store 0 B][0m                          Get:16 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-security/main amd64 DEP-11 Metadata [74.0 kB]
+[33m97% [8 Packages store 0 B] [16 Components-amd64 14.8 kB/74.0 kB 20%][0m[33m                                                                    98% [8 Packages store 0 B][0m                          Get:17 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-security/universe amd64 DEP-11 Metadata [127 kB]
+[33m98% [8 Packages store 0 B] [17 Components-amd64 57.6 kB/127 kB 45%][0m[33m                                                                   99% [8 Packages store 0 B][0m[33m                          99% [Working][0m[33m99% [9 Components-amd64 store 0 B][0m[33m                                  99% [Working][0m[33m99% [10 Packages store 0 B][0m[33m                           99% [Working][0m[33m99% [11 Packages store 0 B][0m[33m                           99% [Working][0m[33m99% [12 Components-amd64 store 0 B][0m[33m                                   100% [Working][0m[33m100% [13 Components-amd64 store 0 B][0m[33m                                    100% [Working][0m[33m100% [14 Components-amd64 store 0 B][0m[33m                                    100% [Working][0m[33m100% [15 Components-amd64 store 0 B][0m[33m                                    100% [Working][0m[33m100% [16 Components-amd64 store 0 B][0m[33m                                    100% [Working][0m[33m100% [17 Components-amd64 store 0 B][0m[33m                                    100% [Working][0m              Fetched 7,873 kB in 4s (2,123 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 1%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 3%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 4%Reading package lists... 21%Reading package lists... 21%Reading package lists... 21%Reading package lists... 30%Reading package lists... 30%Reading package lists... 38%Reading package lists... 38%Reading package lists... 38%Reading package lists... 38%Reading package lists... 38%Reading package lists... 38%Reading package lists... 38%Reading package lists... 38%Reading package lists... 42%Reading package lists... 44%Reading package lists... 44%Reading package lists... 45%Reading package lists... 45%Reading package lists... 49%Reading package lists... 49%Reading package lists... 57%Reading package lists... 59%Reading package lists... 59%Reading package lists... 59%Reading package lists... 59%Reading package lists... 65%Reading package lists... 65%Reading package lists... 67%Reading package lists... 67%Reading package lists... 68%Reading package lists... 68%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 69%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 75%Reading package lists... 75%Reading package lists... 76%Reading package lists... 76%Reading package lists... 79%Reading package lists... 80%Reading package lists... 80%Reading package lists... 89%Reading package lists... 89%Reading package lists... 89%Reading package lists... 89%Reading package lists... 95%Reading package lists... 95%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 98%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+8 packages can be upgraded. Run 'apt list --upgradable' to see them.
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way[00m$ [7msudo apt install -y build-essential gdb valgrind vim nano git tree[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo apt install -y build-essential gdb valgrind vim nano git tree
+[?2004lReading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... 99%Building dependency tree... Done
+Reading state information... 0% Reading state information... 0%Reading state information... Done
+build-essential is already the newest version (12.9ubuntu3).
+tree is already the newest version (2.0.2-1).
+gdb is already the newest version (12.1-0ubuntu1~22.04.2).
+git is already the newest version (1:2.34.1-1ubuntu1.17).
+nano is already the newest version (6.2-1ubuntu0.2).
+nano set to manually installed.
+vim is already the newest version (2:8.2.3995-1ubuntu2.33).
+The following packages were automatically installed and are no longer required:
+  libfwupd2 libfwupdplugin5 libgcab-1.0-0 libsmbios-c2
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libc6-i386
+Suggested packages:
+  valgrind-dbg valgrind-mpi kcachegrind alleyoop valkyrie
+The following NEW packages will be installed:
+  libc6-i386 valgrind
+0 upgraded, 2 newly installed, 0 to remove and 8 not upgraded.
+Need to get 16.9 MB of archives.
+After this operation, 91.8 MB of additional disk space will be used.
+[33m0% [Working][0m            Get:1 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy-updates/main amd64 libc6-i386 amd64 2.35-0ubuntu3.13 [2,837 kB]
+[33m0% [1 libc6-i386 5,184 B/2,837 kB 0%][0m[33m5% [1 libc6-i386 1,152 kB/2,837 kB 41%][0m[33m                                       23% [Working][0m             Get:2 http://mirrors.tuna.tsinghua.edu.cn/ubuntu jammy/main amd64 valgrind amd64 1:3.18.1-1ubuntu2 [14.1 MB]
+[33m24% [2 valgrind 97.6 kB/14.1 MB 1%][0m[33m87% [2 valgrind 13.5 MB/14.1 MB 96%][0m[33m                                    100% [Working][0m              Fetched 16.9 MB in 2s (11.0 MB/s)
+
+7[0;39r8[1ASelecting previously unselected package libc6-i386.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 226179 files and directories currently installed.)
+Preparing to unpack .../libc6-i386_2.35-0ubuntu3.13_amd64.deb ...
+7[40;0f[42m[30mProgress: [  0%][49m[39m [..............................................................................................................] 87[40;0f[42m[30mProgress: [ 11%][49m[39m [############..................................................................................................] 8Unpacking libc6-i386 (2.35-0ubuntu3.13) ...
+7[40;0f[42m[30mProgress: [ 22%][49m[39m [########################......................................................................................] 8Selecting previously unselected package valgrind.
+Preparing to unpack .../valgrind_1%3a3.18.1-1ubuntu2_amd64.deb ...
+7[40;0f[42m[30mProgress: [ 33%][49m[39m [####################################..........................................................................] 8Unpacking valgrind (1:3.18.1-1ubuntu2) ...
+7[40;0f[42m[30mProgress: [ 44%][49m[39m [################################################..............................................................] 8Setting up libc6-i386 (2.35-0ubuntu3.13) ...
+7[40;0f[42m[30mProgress: [ 56%][49m[39m [#############################################################.................................................] 87[40;0f[42m[30mProgress: [ 67%][49m[39m [#########################################################################.....................................] 8Setting up valgrind (1:3.18.1-1ubuntu2) ...
+7[40;0f[42m[30mProgress: [ 78%][49m[39m [#####################################################################################.........................] 87[40;0f[42m[30mProgress: [ 89%][49m[39m [#################################################################################################.............] 8Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.13) ...
+
+7[0;40r8[1A[J[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way[00m$ {
+    echo "===== Exercise 0 Environment Check ====="
+    echo
+    echo "[Date]"
+    date
+
+    echo
+    echo "[Current Directory]"
+[7m    pwd[27m
+
+[7m    echo[27m
+[7m    echo "[GCC]"[27m
+[7m    gcc --version | head -n 1[27m
+
+[7m    echo[27m
+[7m    echo "[Make]"[27m
+[7m    make --version | head -n 1[27m
+
+[7m    echo[27m
+[7m    echo "[GDB]"[27m
+[7m    gdb --version | head -n 1[27m
+
+[7m    echo[27m
+[7m    echo "[Valgrind]"[27m
+[7m    valgrind --version[27m
+
+[7m    echo[27m
+[7m    echo "[Git]"[27m
+[7m    git --version[27m
+
+[7m    echo[27m
+[7m    echo "[Vim]"[27m
+[7m    vim --version | head -n 1[27m
+
+[7m    echo[27m
+[7m    echo "[Nano]"[27m
+[7m    nano --version | head -n 1[27m
+
+[7m    echo[27m
+[7m    echo "[Tool Paths]"[27m
+[7m    command -v gcc[27m[7m    command -v make[27m[7m    command -v gdb[27m[7m    command -v valgrind[27m[7m    command -v git[27m[7m    command -v vim[27m[7m    command -v nano[27m[7m} 2>&1 | tee exercises/ex00/logs/environment.log[27m[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A    pwd
+
+    echo
+    echo "[GCC]"
+    gcc --version | head -n 1
+
+    echo
+    echo "[Make]"
+    make --version | head -n 1
+
+    echo
+    echo "[GDB]"
+    gdb --version | head -n 1
+
+    echo
+    echo "[Valgrind]"
+    valgrind --version
+
+    echo
+    echo "[Git]"
+    git --version
+
+    echo
+    echo "[Vim]"
+    vim --version | head -n 1
+
+    echo
+    echo "[Nano]"
+    nano --version | head -n 1
+
+    echo
+    echo "[Tool Paths]"
+    command -v gcc    command -v make    command -v gdb    command -v valgrind    command -v git    command -v vim    command -v nano} 2>&1 | tee exercises/ex00/logs/environment.log
+[?2004l===== Exercise 0 Environment Check =====
+
+[Date]
+2026年 07月 12日 星期日 16:30:54 CST
+
+[Current Directory]
+/home/joujou/Practice/learn-c-the-hard-way
+
+[GCC]
+gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0
+
+[Make]
+GNU Make 4.3
+
+[GDB]
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04.2) 12.1
+
+[Valgrind]
+valgrind-3.18.1
+
+[Git]
+git version 2.34.1
+
+[Vim]
+VIM - Vi IMproved 8.2 (2019 Dec 12, compiled Jun 30 2026 17:46:22)
+
+[Nano]
+ GNU nano, version 6.2
+
+[Tool Paths]
+/usr/bin/gcc
+/usr/bin/make
+/usr/bin/gdb
+/usr/bin/valgrind
+/usr/bin/git
+/usr/bin/vim
+/usr/bin/nano
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way[00m$ vim [K [K[K[K[Kcd exercises/ex00/
+[?2004l[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex00[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex00[00m$ vim README.md
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;40r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[40;1H"README.md" [New][2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                                                   [3;1H~                                                                                                                                   [4;1H~                                                                                                                                   [5;1H~                                                                                                                                   [6;1H~                                                                                                                                   [7;1H~                                                                                                                                   [8;1H~                                                                                                                                   [9;1H~                                                                                                                                   [10;1H~                                                                                                                                   [11;1H~                                                                                                                                   [12;1H~                                                                                                                                   [13;1H~                                                                                                                                   [14;1H~                                                                                                                                   [15;1H~                                                                                                                                   [16;1H~                                                                                                                                   [17;1H~                                                                                                                                   [18;1H~                                                                                                                                   [19;1H~                                                                                                                                   [20;1H~                                                                                                                                   [21;1H~                                                                                                                                   [22;1H~                                                                                                                                   [23;1H~                                                                                                                                   [24;1H~                                                                                                                                   [25;1H~                                                                                                                                   [26;1H~                                                                                                                                   [27;1H~                                                                                                                                   [28;1H~                                                                                                                                   [29;1H~                                                                                                                                   [30;1H~                                                                                                                                   [31;1H~                                                                                                                                   [32;1H~                                                                                                                                   [33;1H~                                                                                                                                   [34;1H~                                                                                                                                   [35;1H~                                                                                                                                   [36;1H~                                                                                                                                   [37;1H~                                                                                                                                   [38;1H~                                                                                                                                   [39;1H~                                                                                                                                   [m[40;115H0,0-1[9CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[40;1H[1m-- INSERT --[m[40;13H[K[40;115H0,1[11CAll[1;1H[?25h[?25l[38;5;224m#[m[38;5;225m Exercise 0: The Setup[m[2;1H[K[3;1H[38;5;224m##[m[38;5;225m 学习目标[m[3;12H[K[4;1H[K[5;1H[93m-[m 在Linux中[5;12H[K[5;12H[?25h[?25l配置C语言开发环境
+[93m-[m 熟悉终端和Shell提示符[6;24H[K[7;1H[93m-[m 安[7;5H[K[7;5H[?25h[?25l装并验证GCC、Make、GDB和Valgrind
+[93m-[m 学会使用终端[8;15H[K[8;15H[?25h[?25l文本编辑器
+[93m-[m 使用Git保存学习过程[9;22H[K[10;1H[K[11;1H[38;5;224m##[m[38;5;225m 当前环境[m[11;12H[K[12;1H[K[12;1H[?25h[?25l
+本练习在Ubuntu Linux环境中完成。[13;33H[K[14;1H[K[15;1H[38;5;224m##[m[38;5;225m 已安装工[m[15;12H[K[15;12H[?25h[?25l[38;5;225m具[m[16;1H[K[17;1H[93m-[m GCC：用于编译C程序[17;21H[K[18;1H[93m-[m Make：用于自动化构[18;21H[K[18;21H[?25h[?25l建
+[93m-[m GDB：用于程序调试[19;20H[K[20;1H[93m-[m Valgrind：用于检查内存[20;25H[K[20;25H[?25h[?25l错误
+[93m-[m Vim和Nano：用于编辑文本[21;26H[K[22;1H[93m-[m Git：用于版本管[22;18H[K[22;18H[?25h[?25l理[23;1H[K[24;1H[38;5;224m##[m[38;5;225m 对“[24;7H不要使用IDE”[24;19H的理解[m[24;25H[K[25;1H[K[26;1H书中并不是说I[26;14H[K[26;14H[?25h[?25lDE永远不能使用，而是强调初学阶段需要理解[?25h[?25l代码背后的编译、链接、运行和调试过程。[27;1H[K[28;1H如[28;3H[K[28;3H[?25h[?25l果完全依赖IDE中的按钮，就可能不知道实际[?25h[?25l执行了哪些编译命令，也不容易理解错误发生在[?25h[?25l哪个阶段。[29;1H[K[30;1H因此，本阶段优先使用终端、文[30;29H[K[30;29H[?25h[?25l本编辑器、GCC、Make和Git完成练习。[31;1H[K[32;1H[38;5;224m##[m[38;5;225m 本题总结[m[32;12H[K[32;12H[?25h[?25l[33;1H[K[34;1H练习0没有正式的C语言代码，主要目标是搭[34;39H[K[34;39H[?25h[?25l建开发环境，并为后面的练习做好准备。[40;115H34,111-75[34;75H[?25h[40;1H[K[34;73H[?25l[40;115H34,108-73     All[34;73H[?25h[?25l[40;115H[K[40;1H:[?25hwq[?25l[?2004l[>4;m"README.md" [New] 34L, 1025B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex00[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex00[00m$ cat README.md 
+[?2004l# Exercise 0: The Setup
+
+## 学习目标
+
+- 在Linux中配置C语言开发环境
+- 熟悉终端和Shell提示符
+- 安装并验证GCC、Make、GDB和Valgrind
+- 学会使用终端文本编辑器
+- 使用Git保存学习过程
+
+## 当前环境
+
+本练习在Ubuntu Linux环境中完成。
+
+## 已安装工具
+
+- GCC：用于编译C程序
+- Make：用于自动化构建
+- GDB：用于程序调试
+- Valgrind：用于检查内存错误
+- Vim和Nano：用于编辑文本
+- Git：用于版本管理
+
+## 对“不要使用IDE”的理解
+
+书中并不是说IDE永远不能使用，而是强调初学阶段需要理解代码背后的编译、链接、运行和调试过程。
+
+如果完全依赖IDE中的按钮，就可能不知道实际执行了哪些编译命令，也不容易理解错误发生在哪个阶段。
+
+因此，本阶段优先使用终端、文本编辑器、GCC、Make和Git完成练习。
+
+## 本题总结
+
+练习0没有正式的C语言代码，主要目标是搭建开发环境，并为后面的练习做好准备。
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex00[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex00[00m$ cd ..
+[?2004l[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises[00m$ cd ..
+[?2004l[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way[00m$ [7mtree exercises/ex00[27mtree exercises/ex00
+[?2004l[01;34mexercises/ex00[0m
+├── [01;34mlogs[0m
+│   ├── environment.log
+│   └── system-info.log
+└── README.md
+
+1 directory, 3 files
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way[00m$ git status  [K--short 
+[?2004l[31m??[m exercises/
+[31m??[m session-logs/
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way[00m$ git status 
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mexercises/[m
+	[31msession-logs/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-07-12 16:33:29+08:00 [COMMAND_EXIT_CODE="0"]
