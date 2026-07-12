@@ -1,0 +1,10 @@
+cc -Wall -g    ex3.c   -o ex3
+ex3.c: In function ‘main’:
+ex3.c:8:23: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+    8 |         printf("I am %d years old.\n");
+      |                      ~^
+      |                       |
+      |                       int
+ex3.c:5:13: warning: unused variable ‘age’ [-Wunused-variable]
+    5 |         int age = 10;
+      |             ^~~
