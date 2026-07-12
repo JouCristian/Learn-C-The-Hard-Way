@@ -1,0 +1,1 @@
+cc -Wall -g    ex1.c   -o ex1
