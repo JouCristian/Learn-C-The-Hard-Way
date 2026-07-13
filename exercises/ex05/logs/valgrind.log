@@ -1,0 +1,15 @@
+==34180== Memcheck, a memory error detector
+==34180== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==34180== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==34180== Command: ./ex5
+==34180== 
+You are 100 miles away.
+==34180== 
+==34180== HEAP SUMMARY:
+==34180==     in use at exit: 0 bytes in 0 blocks
+==34180==   total heap usage: 1 allocs, 1 frees, 4,096 bytes allocated
+==34180== 
+==34180== All heap blocks were freed -- no leaks are possible
+==34180== 
+==34180== For lists of detected and suppressed errors, rerun with: -s
+==34180== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
