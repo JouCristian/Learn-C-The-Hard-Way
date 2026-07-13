@@ -1,0 +1,20 @@
+rm -f ex7 ex7_limits
+cc -Wall -Wextra -g    ex7.c   -o ex7
+cc -Wall -Wextra -g    ex7_limits.c   -o ex7_limits
+ex7_limits.c: In function ‘main’:
+ex7_limits.c:7:62: error: ‘unsigined’ undeclared (first use in this function)
+    7 |         printf("sizeof(unsigined long) = %zu bytes\n",sizeof(unsigined long));
+      |                                                              ^~~~~~~~~
+ex7_limits.c:7:62: note: each undeclared identifier is reported only once for each function it appears in
+ex7_limits.c:7:71: error: expected ‘)’ before ‘long’
+    7 |         printf("sizeof(unsigined long) = %zu bytes\n",sizeof(unsigined long));
+      |                                                             ~         ^~~~~
+      |                                                                       )
+ex7_limits.c:13:18: error: expected ‘;’ before ‘long’
+   13 |         unsigined long wrapped = ULONG_MAX + 1UL;
+      |                  ^~~~~
+      |                  ;
+ex7_limits.c:15:40: error: ‘wrapped’ undeclared (first use in this function)
+   15 |         printf("ULONG_MAX + 1 = %lu\n",wrapped);
+      |                                        ^~~~~~~
+make: *** [<builtin>: ex7_limits] Error 1

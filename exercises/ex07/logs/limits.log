@@ -1,0 +1,7 @@
+sizeof(int) = 4 bytes
+sizeof(long) = 8 bytes
+sizeof(unsigned long) = 8 bytes
+LONG_MIN = -9223372036854775808
+LONG_MAX = 9223372036854775807
+ULONG_MAX = 18446744073709551615
+ULONG_MAX + 1 = 0

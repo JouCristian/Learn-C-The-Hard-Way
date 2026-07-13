@@ -1,0 +1,9 @@
+cc -Wall -Wextra -g    ex7.c   -o ex7
+ex7.c: In function ‘main’:
+ex7.c:31:41: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+   31 |         printf("nul_byte as a string: [%s]",nul_byte);
+      |                                        ~^   ~~~~~~~~
+      |                                         |   |
+      |                                         |   int
+      |                                         char *
+      |                                        %d

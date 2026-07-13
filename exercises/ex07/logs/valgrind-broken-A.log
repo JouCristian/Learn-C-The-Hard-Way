@@ -1,0 +1,39 @@
+==36875== Memcheck, a memory error detector
+==36875== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==36875== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==36875== Command: ./ex7
+==36875== 
+==36875== Invalid read of size 1
+==36875==    at 0x484ED16: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==36875==    by 0x48E4D30: __vfprintf_internal (vfprintf-internal.c:1517)
+==36875==    by 0x48CE79E: printf (printf.c:33)
+==36875==    by 0x109265: main (ex7.c:34)
+==36875==  Address 0x41 is not stack'd, malloc'd or (recently) free'd
+==36875== 
+==36875== 
+==36875== Process terminating with default action of signal 11 (SIGSEGV)
+==36875==  Access not within mapped region at address 0x41
+==36875==    at 0x484ED16: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==36875==    by 0x48E4D30: __vfprintf_internal (vfprintf-internal.c:1517)
+==36875==    by 0x48CE79E: printf (printf.c:33)
+==36875==    by 0x109265: main (ex7.c:34)
+==36875==  If you believe this happened as a result of a stack
+==36875==  overflow in your program's main thread (unlikely but
+==36875==  possible), you can try to increase the size of the
+==36875==  main thread stack using the --main-stacksize= flag.
+==36875==  The main thread stack size used in this run was 8388608.
+==36875== 
+==36875== HEAP SUMMARY:
+==36875==     in use at exit: 4,096 bytes in 1 blocks
+==36875==   total heap usage: 1 allocs, 0 frees, 4,096 bytes allocated
+==36875== 
+==36875== LEAK SUMMARY:
+==36875==    definitely lost: 0 bytes in 0 blocks
+==36875==    indirectly lost: 0 bytes in 0 blocks
+==36875==      possibly lost: 0 bytes in 0 blocks
+==36875==    still reachable: 4,096 bytes in 1 blocks
+==36875==         suppressed: 0 bytes in 0 blocks
+==36875== Rerun with --leak-check=full to see details of leaked memory
+==36875== 
+==36875== For lists of detected and suppressed errors, rerun with: -s
+==36875== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
