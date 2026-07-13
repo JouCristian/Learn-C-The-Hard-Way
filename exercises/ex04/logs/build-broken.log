@@ -1,0 +1,13 @@
+cc -Wall -Wextra -g    ex4.c   -o ex4
+ex4.c: In function ‘main’:
+ex4.c:10:23: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+   10 |         printf("I am %d years old.\n");
+      |                      ~^
+      |                       |
+      |                       int
+ex4.c:7:13: warning: unused variable ‘age’ [-Wunused-variable]
+    7 |         int age = 10;
+      |             ^~~
+ex4.c:11:9: warning: ‘height’ is used uninitialized [-Wuninitialized]
+   11 |         printf("I am %d inches tall.\n",height);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
