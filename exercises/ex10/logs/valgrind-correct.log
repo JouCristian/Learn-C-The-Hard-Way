@@ -1,0 +1,21 @@
+==42056== Memcheck, a memory error detector
+==42056== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==42056== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==42056== Command: ./ex10 one two three
+==42056== 
+arg 1: one
+arg 2: two
+arg 3: three
+state 0: California
+state 1: Oregon
+state 2: Washington
+state 3: Texas
+==42056== 
+==42056== HEAP SUMMARY:
+==42056==     in use at exit: 0 bytes in 0 blocks
+==42056==   total heap usage: 1 allocs, 1 frees, 4,096 bytes allocated
+==42056== 
+==42056== All heap blocks were freed -- no leaks are possible
+==42056== 
+==42056== For lists of detected and suppressed errors, rerun with: -s
+==42056== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

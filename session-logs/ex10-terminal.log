@@ -1,0 +1,710 @@
+Script started on 2026-07-13 19:59:32+08:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="132" LINES="40"]
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ vim Makefile 
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;40r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[40;1H"Makefile" 8L, 79B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[1m[96mCFLAGS[m=-Wall -Wextra -g[2;1H[K[3;1H[1m[96mall:[m ex9[3;9H[K[5;1H[1m[96mclean:[m
+[95m        rm -f ex9[m
+
+[93m.PHONY:[m all clean
+[94m~                                                                                                                                   [10;1H~                                                                                                                                   [11;1H~                                                                                                                                   [12;1H~                                                                                                                                   [13;1H~                                                                                                                                   [14;1H~                                                                                                                                   [15;1H~                                                                                                                                   [16;1H~                                                                                                                                   [17;1H~                                                                                                                                   [18;1H~                                                                                                                                   [19;1H~                                                                                                                                   [20;1H~                                                                                                                                   [21;1H~                                                                                                                                   [22;1H~                                                                                                                                   [23;1H~                                                                                                                                   [24;1H~                                                                                                                                   [25;1H~                                                                                                                                   [26;1H~                                                                                                                                   [27;1H~                                                                                                                                   [28;1H~                                                                                                                                   [29;1H~                                                                                                                                   [30;1H~                                                                                                                                   [31;1H~                                                                                                                                   [32;1H~                                                                                                                                   [33;1H~                                                                                                                                   [34;1H~                                                                                                                                   [35;1H~                                                                                                                                   [36;1H~                                                                                                                                   [37;1H~                                                                                                                                   [38;1H~                                                                                                                                   [39;1H~                                                                                                                                   [m[40;115H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[40;115H2,0-1[2;1H[?25h[?25l[40;115H3,1  [3;1H[?25h[?25l[40;115H4,0-1[4;1H[?25h[?25l[40;115H3,1  [3;1H[?25h[?25l[40;1H[1m-- INSERT --[m[40;13H[K[40;115H3,9[11CAll[3;9H[?25h[?25l[3;8H[K[40;117H8[3;8H[?25h[?25l1[40;117H9[3;9H[?25h[?25l0[40;117H10[3;10H[?25h[?25lj[40;118H1[3;11H[?25h[?25lj[40;118H2[3;12H[?25h[?25l[3;11H[K[40;118H1[3;11H[?25h[?25l=[40;118H2[3;12H[?25h[?25l[3;11H[K[40;118H1[3;11H[?25h[?25l[3;10H[K[40;118H0[3;10H[?25h[40;1H[K[3;9H[?25l[40;115H3,9[11CAll[3;9H[?25h[?25l[40;115H4,0-1[4;1H[?25h[?25l[40;115H5,6  [5;6H[?25h[?25l[40;115H6,2-9[6;9H[?25h[?25l[40;1H[1m-- INSERT --[m[40;115H[K[40;115H6,11-18[7CAll[6;18H[?25h[?25l[6;17H[K[40;118H0-17[6;17H[?25h[?25l[95m1[m[40;118H1-18[6;18H[?25h[?25l[95m2[m[40;118H2-19[6;19H[?25h[?25l[95m0[m[40;118H3-20[6;20H[?25h[?25l[6;19H[K[40;118H2-19[6;19H[?25h[?25l[6;18H[K[40;118H1-18[6;18H[?25h[?25l[95m0[m[40;118H2-19[6;19H[?25h[40;1H[K[6;18H[?25l[40;115H6,11-18[7CAll[6;18H[?25h[?25l[40;115H[K[40;1H:[?25hwq[?25l[?2004l[>4;m"Makefile" 8L, 81B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ cat -A Makefile 
+[?2004lCFLAGS=-Wall -Wextra -g$
+$
+all: ex10$
+$
+clean:$
+^Irm -f ex10$
+       $
+.PHONY: all clean$
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ vim ex10.c
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;40r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[40;1H"ex10.c" [New][2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                                                   [3;1H~                                                                                                                                   [4;1H~                                                                                                                                   [5;1H~                                                                                                                                   [6;1H~                                                                                                                                   [7;1H~                                                                                                                                   [8;1H~                                                                                                                                   [9;1H~                                                                                                                                   [10;1H~                                                                                                                                   [11;1H~                                                                                                                                   [12;1H~                                                                                                                                   [13;1H~                                                                                                                                   [14;1H~                                                                                                                                   [15;1H~                                                                                                                                   [16;1H~                                                                                                                                   [17;1H~                                                                                                                                   [18;1H~                                                                                                                                   [19;1H~                                                                                                                                   [20;1H~                                                                                                                                   [21;1H~                                                                                                                                   [22;1H~                                                                                                                                   [23;1H~                                                                                                                                   [24;1H~                                                                                                                                   [25;1H~                                                                                                                                   [26;1H~                                                                                                                                   [27;1H~                                                                                                                                   [28;1H~                                                                                                                                   [29;1H~                                                                                                                                   [30;1H~                                                                                                                                   [31;1H~                                                                                                                                   [32;1H~                                                                                                                                   [33;1H~                                                                                                                                   [34;1H~                                                                                                                                   [35;1H~                                                                                                                                   [36;1H~                                                                                                                                   [37;1H~                                                                                                                                   [38;1H~                                                                                                                                   [39;1H~                                                                                                                                   [m[40;115H0,0-1[9CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[40;1H[1m-- INSERT --[m[40;13H[K[40;115H0,1[11CAll[1;1H[?25h[?25l[38;5;81m#include [m[95m<stdio.h>[m[2;1H[K[3;1H[38;5;121mint[m main([38;5;121mint[m argc, [38;5;121mchar[m *argv[])[3;33H[K[4;1H{[4;2H[K[5;1H [5;2H[K[5;2H[?25h[?25l   [38;5;121mint[m i = [95m0[m;[6;1H[K[7;1H    [96m/* Go through each string in argv.[m[7;39H[K[8;1H[96m     * ar[m[8;10H[K[8;10H[?25h[?25l[96mgv[0] is skipped because it is normally the program name.
+     [m[9;6H[K[9;6H[?25h[?25l[96m*/[m
+    [93mfor[m (i = [95m1[m; i < argc; i++)[10;31H[K[11;1H    {[11;6H[K[12;1H        printf([95m"arg [m[38;5;224m%d[m[95m:[m[12;24H[K[12;24H[?25h[?25l[95m [m[38;5;224m%s\n[m[95m"[m, i, argv[i]);
+    }[13;6H[K[14;1H[K[15;1H    [96m/* Make our own array of string[m[15;36H[K[15;36H[?25h[?25l[96ms. */[m
+    [38;5;121mchar[m *states[] = {[16;23H[K[17;1H        [95m"California"[m,[17;22H[K[18;1H        [95m"Ore[m[18;13H[K[18;13H[?25h[?25l[95mgon"[m,
+        [95m"Washington"[m,[19;22H[K[20;1H        [95m"Texas"[m[20;16H[K[21;1H    };[21;7H[K[22;1H[K[23;1H    [38;5;121mint[m num[23;12H[K[23;12H[?25h[?25l_states = [95m4[m;[24;1H[K[25;1H    [93mfor[m (i = [95m0[m; i < num_states; i++)[25;37H[K[26;1H    {[26;6H[K[27;1H      [27;7H[K[27;7H[?25h[?25l  printf([95m"state [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m, i, states[i]);
+    }[28;6H[K[29;1H[K[30;1H    [93mreturn[m [95m0[m;[30;14H[K[31;1H[K[31;1H[?25h[?25l}[4;1H[46m{[31;1H}[m[40;115H31,2[31;2H[?25h[40;1H[K[31;1H[?25l[40;115H31,1[10CAll[31;1H[?25h[?25l[4;1H{[31;1H}[40;116H0[30;1H[?25h[?25l[40;115H29,0-1[29;1H[?25h[?25l[40;116H8,1  [28;1H[?25h[?25l[40;116H7[27;1H[?25h[?25l[40;116H6[26;1H[?25h[?25l[40;116H5[25;1H[?25h[?25l[40;116H4,0-1[24;1H[?25h[?25l[40;116H3,1  [23;1H[?25h[?25l[40;116H2,0-1[22;1H[?25h[?25l[40;116H1,1  [21;1H[?25h[?25l[40;116H0[20;1H[?25h[?25l[40;115H19[19;1H[?25h[?25l[40;116H8[18;1H[?25h[?25l[40;116H7[17;1H[?25h[?25l[40;116H6[16;1H[?25h[?25l[40;116H5[15;1H[?25h[?25l[40;116H4,0-1[14;1H[?25h[?25l[40;116H3,1  [13;1H[?25h[?25l[40;116H2[12;1H[?25h[?25l[40;116H1[11;1H[?25h[?25l[40;116H0[10;1H[?25h[?25l[40;115H9,1 [9;1H[?25h[?25l[40;115H8[8;1H[?25h[?25l[40;115H7[7;1H[?25h[?25l[40;115H6,0-1[6;1H[?25h[?25l[40;115H5,1  [5;1H[?25h[?25l[4;1H[46m{[31;1H}[m[40;115H4[4;1H[?25h[?25l{[31;1H}[40;115H3[3;1H[?25h[?25l[40;115H2,0-1[2;1H[?25h[?25l[40;115H[K[40;1H:[?25hew[?25l[40;3H[K[40;3H[?25h[?25l[40;2H[K[40;2H[?25hwq[?25l[?2004l[>4;m"ex10.c" [New] 31L, 562B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ make clean 
+[?2004lrm -f ex10
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ make ex10 2>&10[K | tee logs/nb[K[Kbuild.log
+[?2004lcc -Wall -Wextra -g    ex10.c   -o ex10
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ ls
+[?2004l[0m[01;32mex10[0m  ex10.c  [01;34mlogs[0m  Makefile
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ make[K[K[K[K[7m./ex10 | tee logs/run-no-args.log[27m./ex10 | tee logs/run-no-args.log
+[?2004lstate 0: California
+state 1: Oregon
+state 2: Washington
+state 3: Texas
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ cat ex10.c
+[?2004l#include <stdio.h>
+
+int main(int argc, char *argv[])
+{
+    int i = 0;
+
+    /* Go through each string in argv.
+     * argv[0] is skipped because it is normally the program name.
+     */
+    for (i = 1; i < argc; i++)
+    {
+        printf("arg %d: %s\n", i, argv[i]);
+    }
+
+    /* Make our own array of strings. */
+    char *states[] = {
+        "California",
+        "Oregon",
+        "Washington",
+        "Texas"
+    };
+
+    int num_states = 4;
+
+    for (i = 0; i < num_states; i++)
+    {
+        printf("state %d: %s\n", i, states[i]);
+    }
+
+    return 0;
+}
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ 
+
+[7mconst char *states[] = {[27m
+
+[7m    "California",[27m
+
+[7m    "Oregon",[27m
+
+[7m    "Washington",[27m
+
+[7m    "Texas"[27m
+
+[7m};[27m
+
+[7m我好奇，是不是C里的字符串数组，就必须要用这种指针形式，因为char *A,代表A这个指向字符串的指针，然后加个[]就变成数组了对吗[27m^C[?2004l[?2004h[?2004l
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ [7mvalgrind --track-origins=yes ./ex10 one two three \[27m
+[7m    2>&1 | tee logs/valgrind-correct.log[27m[A]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ valgrind --track-origins=yes ./ex10 one two three \
+    2>&1 | tee logs/valgrind-correct.log
+[?2004l==42056== Memcheck, a memory error detector
+==42056== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==42056== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==42056== Command: ./ex10 one two three
+==42056== 
+arg 1: one
+arg 2: two
+arg 3: three
+state 0: California
+state 1: Oregon
+state 2: Washington
+state 3: Texas
+==42056== 
+==42056== HEAP SUMMARY:
+==42056==     in use at exit: 0 bytes in 0 blocks
+==42056==   total heap usage: 1 allocs, 1 frees, 4,096 bytes allocated
+==42056== 
+==42056== All heap blocks were freed -- no leaks are possible
+==42056== 
+==42056== For lists of detected and suppressed errors, rerun with: -s
+==42056== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ [7mgrep "ERROR SUMMARY" logs/valgrind-correct.log[27mgrep "ERROR SUMMARY" logs/valgrind-correct.log
+[?2004l==42056== [01;31m[KERROR SUMMARY[m[K: 0 errors from 0 contexts (suppressed: 0 from 0)
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ cp ex10.c ex10-[K.correct,[K[Kt.c
+[?2004l[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ ls
+[?2004l[0m[01;32mex10[0m  ex10.c  ex10.correct.c  [01;34mlogs[0m  Makefile
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ vim 1[Kex10.c
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;40r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[40;1H"ex10.c" 31L, 562B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[38;5;81m#include [m[95m<stdio.h>[m[2;1H[K[3;1H[38;5;121mint[m main([38;5;121mint[m argc, [38;5;121mchar[m *argv[])[3;33H[K[4;1H{
+    [38;5;121mint[m i = [95m0[m;[7;5H[96m/* Go through each string in argv.
+     * argv[0] is skipped because it is normally the program name.
+     */[m
+    [93mfor[m (i = [95m1[m; i < argc; i++)
+    {[12;9Hprintf([95m"arg [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m, i, argv[i]);
+    }[15;5H[96m/* Make our own array of strings. */[m
+    [38;5;121mchar[m *states[] = {[17;9H[95m"California"[m,[18;9H[95m"Oregon"[m,[19;9H[95m"Washington"[m,[20;9H[95m"Texas"[m
+    };[23;5H[38;5;121mint[m num_states = [95m4[m;[25;5H[93mfor[m (i = [95m0[m; i < num_states; i++)
+    {[27;9Hprintf([95m"state [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m, i, states[i]);
+    }[30;5H[93mreturn[m [95m0[m;
+}
+[94m~                                                                                                                                   [33;1H~                                                                                                                                   [34;1H~                                                                                                                                   [35;1H~                                                                                                                                   [36;1H~                                                                                                                                   [37;1H~                                                                                                                                   [38;1H~                                                                                                                                   [39;1H~                                                                                                                                   [m[40;115H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[40;115H2,0-1[2;1H[?25h[?25l[40;115H3,1  [3;1H[?25h[?25l
+[46m{[31;1H}[m[40;115H4[4;1H[?25h[?25l{[31;1H}[40;115H5[5;1H[?25h[?25l[40;115H6,0-1[6;1H[?25h[?25l[40;115H7,1  [7;1H[?25h[?25l[40;115H8[8;1H[?25h[?25l[40;115H9[9;1H[?25h[?25l[40;115H10,1[10;1H[?25h[?25l[40;118H2[10;2H[?25h[?25l[40;118H3[10;3H[?25h[?25l[40;118H4[10;4H[?25h[?25l[40;118H5[10;5H[?25h[?25l[40;118H6[10;6H[?25h[?25l[40;118H7[10;7H[?25h[?25l[40;118H8[10;8H[?25h[?25l [46m([20C)[m[40;118H9[10;9H[?25h[?25l([20C)[40;118H10[10;10H[?25h[?25l[40;119H1[10;11H[?25h[?25l[40;119H2[10;12H[?25h[?25l[40;119H3[10;13H[?25h[?25l[40;119H4[10;14H[?25h[?25l[40;119H5[10;15H[?25h[?25l[40;1H[1m-- INSERT --[m[40;13H[K[40;115H10,15[9CAll[10;15H[?25h[?25l; i < argc; i++)[10;30H[K[40;119H4[10;14H[?25h[?25l[95m0[m; i < argc; i++)[40;119H5[10;15H[?25h[40;1H[K[10;14H[?25l[40;115H10,14[9CAll[10;14H[?25h[?25l[4;1H[46m{[31;1H}[m[40;115H31,1 [31;1H[?25h[?25l[40;115H[K[40;1H:[?25hwq[?25l[?2004l[>4;m"ex10.c" 31L, 562B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ ls
+[?2004l[0m[01;32mex10[0m  ex10.c  ex10.correct.c  [01;34mlogs[0m  Makefile
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ makec[K clean 
+[?2004lrm -f ex10
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ [7mmake ex10 2>&1 | tee logs/build-from-zero.log[27mmake ex10 2>&1 | tee logs/build-from-zero.log
+[?2004lcc -Wall -Wextra -g    ex10.c   -o ex10
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ [7m./ex10 apple banana | tee logs/run-from-zero.log[27m./ex10 apple banana | tee logs/run-from-zero.log
+[?2004larg 0: ./ex10
+arg 1: apple
+arg 2: banana
+state 0: California
+state 1: Oregon
+state 2: Washington
+state 3: Texas
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ cayt[K[K[K[Kcat ex10.c
+[?2004l#include <stdio.h>
+
+int main(int argc, char *argv[])
+{
+    int i = 0;
+
+    /* Go through each string in argv.
+     * argv[0] is skipped because it is normally the program name.
+     */
+    for (i = 0; i < argc; i++)
+    {
+        printf("arg %d: %s\n", i, argv[i]);
+    }
+
+    /* Make our own array of strings. */
+    char *states[] = {
+        "California",
+        "Oregon",
+        "Washington",
+        "Texas"
+    };
+
+    int num_states = 4;
+
+    for (i = 0; i < num_states; i++)
+    {
+        printf("state %d: %s\n", i, states[i]);
+    }
+
+    return 0;
+}
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ cp ex10.correct.c ex10.c
+[?2004l[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ ls
+[?2004l[0m[01;32mex10[0m  ex10.c  ex10.correct.c  [01;34mlogs[0m  Makefile
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ vbim [K[K[K[K[Kvim ex10.c
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;40r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[40;1H"ex10.c" 31L, 562B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[38;5;81m#include [m[95m<stdio.h>[m[2;1H[K[3;1H[38;5;121mint[m main([38;5;121mint[m argc, [38;5;121mchar[m *argv[])[3;33H[K[4;1H{
+    [38;5;121mint[m i = [95m0[m;[7;5H[96m/* Go through each string in argv.
+     * argv[0] is skipped because it is normally the program name.
+     */[m
+    [93mfor[m (i = [95m1[m; i < argc; i++)
+    {[12;9Hprintf([95m"arg [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m, i, argv[i]);
+    }[15;5H[96m/* Make our own array of strings. */[m
+    [38;5;121mchar[m *states[] = {[17;9H[95m"California"[m,[18;9H[95m"Oregon"[m,[19;9H[95m"Washington"[m,[20;9H[95m"Texas"[m
+    };[23;5H[38;5;121mint[m num_states = [95m4[m;[25;5H[93mfor[m (i = [95m0[m; i < num_states; i++)
+    {[27;9Hprintf([95m"state [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m, i, states[i]);
+    }[30;5H[93mreturn[m [95m0[m;
+}
+[94m~                                                                                                                                   [33;1H~                                                                                                                                   [34;1H~                                                                                                                                   [35;1H~                                                                                                                                   [36;1H~                                                                                                                                   [37;1H~                                                                                                                                   [38;1H~                                                                                                                                   [39;1H~                                                                                                                                   [m[40;115H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[40;115H2,0-1[2;1H[?25h[?25l[40;115H3,1  [3;1H[?25h[?25l
+[46m{[31;1H}[m[40;115H4[4;1H[?25h[?25l{[31;1H}[40;115H5[5;1H[?25h[?25l[40;115H6,0-1[6;1H[?25h[?25l[40;115H7,1  [7;1H[?25h[?25l[40;115H8[8;1H[?25h[?25l[40;115H9[9;1H[?25h[?25l[40;115H10,1[10;1H[?25h[?25l[40;116H1[11;1H[?25h[?25l[40;116H2[12;1H[?25h[?25l[40;116H3[13;1H[?25h[?25l[40;116H4,0-1[14;1H[?25h[?25l[40;116H5,1  [15;1H[?25h[?25l[40;116H6[16;1H[?25h[?25l[40;116H7[17;1H[?25h[?25l[40;116H8[18;1H[?25h[?25l[40;116H9[19;1H[?25h[?25l[40;115H20[20;1H[?25h[?25l[40;116H1[21;1H[?25h[?25l[40;116H2,0-1[22;1H[?25h[?25l[40;116H3,1  [23;1H[?25h[?25l[40;1H[1m-- INSERT --[m[40;13H[K[40;115H23,24[9CAll[23;24H[?25h[?25l[23;23H[K[40;119H3[23;23H[?25h[?25l[23;22H[K[40;119H2[23;22H[?25h[?25l[95m1[m[40;119H3[23;23H[?25h[?25l[95m0[m[40;119H4[23;24H[?25h[?25l;[40;119H5[23;25H[?25h[40;1H[K[23;24H[?25l[40;115H23,24[9CAll[23;24H[?25h[?25l[40;115H[K[40;1H:[?25hwq[?25l[?2004l[>4;m"ex10.c" 31L, 563B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ [7mmake clean[27m
+[7mmake ex10 2>&1 | tee logs/build-bad-count.log[27m[A]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ make clean
+make ex10 2>&1 | tee logs/build-bad-count.log
+[?2004lrm -f ex10
+cc -Wall -Wextra -g    ex10.c   -o ex10
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ [7mvalgrind --track-origins=yes ./ex10 \[27m
+[7m    2>&1 | tee logs/valgrind-bad-count.log[27m[A]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ valgrind --track-origins=yes ./ex10 \
+    2>&1 | tee logs/valgrind-bad-count.log
+[?2004l==42191== Memcheck, a memory error detector
+==42191== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==42191== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==42191== Command: ./ex10
+==42191== 
+==42191== Conditional jump or move depends on uninitialised value(s)
+==42191==    at 0x48E373B: __vfprintf_internal (vfprintf-internal.c:1517)
+==42191==    by 0x48CE79E: printf (printf.c:33)
+==42191==    by 0x109235: main (ex10.c:27)
+==42191==  Uninitialised value was created by a stack allocation
+==42191==    at 0x109169: main (ex10.c:4)
+==42191== 
+==42191== Invalid read of size 1
+==42191==    at 0x484ED16: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==42191==    by 0x48E4D30: __vfprintf_internal (vfprintf-internal.c:1517)
+==42191==    by 0x48CE79E: printf (printf.c:33)
+==42191==    by 0x109235: main (ex10.c:27)
+==42191==  Address 0xf0a41125dbbf7400 is not stack'd, malloc'd or (recently) free'd
+==42191== 
+==42191== 
+==42191== Process terminating with default action of signal 11 (SIGSEGV)
+==42191==  General Protection Fault
+==42191==    at 0x484ED16: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==42191==    by 0x48E4D30: __vfprintf_internal (vfprintf-internal.c:1517)
+==42191==    by 0x48CE79E: printf (printf.c:33)
+==42191==    by 0x109235: main (ex10.c:27)
+==42191== 
+==42191== HEAP SUMMARY:
+==42191==     in use at exit: 4,096 bytes in 1 blocks
+==42191==   total heap usage: 1 allocs, 0 frees, 4,096 bytes allocated
+==42191== 
+==42191== LEAK SUMMARY:
+==42191==    definitely lost: 0 bytes in 0 blocks
+==42191==    indirectly lost: 0 bytes in 0 blocks
+==42191==      possibly lost: 0 bytes in 0 blocks
+==42191==    still reachable: 4,096 bytes in 1 blocks
+==42191==         suppressed: 0 bytes in 0 blocks
+==42191== Rerun with --leak-check=full to see details of leaked memory
+==42191== 
+==42191== For lists of detected and suppressed errors, rerun with: -s
+==42191== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ [7mmv ex10.correct.c ex10.c[27mmv ex10.correct.c ex10.c
+[?2004l[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ [7mmake clean[27m
+[7mmake ex10[27m[A]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ make clean
+make ex10
+[?2004lrm -f ex10
+cc -Wall -Wextra -g    ex10.c   -o ex10
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ vim ex10.c
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;40r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[40;1H"ex10.c" 31L, 562B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[38;5;81m#include [m[95m<stdio.h>[m[2;1H[K[3;1H[38;5;121mint[m main([38;5;121mint[m argc, [38;5;121mchar[m *argv[])[3;33H[K[4;1H{
+    [38;5;121mint[m i = [95m0[m;[7;5H[96m/* Go through each string in argv.
+     * argv[0] is skipped because it is normally the program name.
+     */[m
+    [93mfor[m (i = [95m1[m; i < argc; i++)
+    {[12;9Hprintf([95m"arg [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m, i, argv[i]);
+    }[15;5H[96m/* Make our own array of strings. */[m
+    [38;5;121mchar[m *states[] = {[17;9H[95m"California"[m,[18;9H[95m"Oregon"[m,[19;9H[95m"Washington"[m,[20;9H[95m"Texas"[m
+    };[23;5H[38;5;121mint[m num_states = [95m4[m;[25;5H[93mfor[m (i = [95m0[m; i < num_states; i++)
+    {[27;9Hprintf([95m"state [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m, i, states[i]);
+    }[30;5H[93mreturn[m [95m0[m;
+}
+[94m~                                                                                                                                   [33;1H~                                                                                                                                   [34;1H~                                                                                                                                   [35;1H~                                                                                                                                   [36;1H~                                                                                                                                   [37;1H~                                                                                                                                   [38;1H~                                                                                                                                   [39;1H~                                                                                                                                   [m[40;115H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[40;115H2,0-1[2;1H[?25h[?25l[40;115H3,1  [3;1H[?25h[?25l
+[46m{[31;1H}[m[40;115H4[4;1H[?25h[?25l{[31;1H}[40;115H5[5;1H[?25h[?25l[40;115H6,0-1[6;1H[?25h[?25l[40;115H7,1  [7;1H[?25h[?25l[40;115H8[8;1H[?25h[?25l[40;115H9[9;1H[?25h[?25l[40;115H10,1[10;1H[?25h[?25l[40;116H1[11;1H[?25h[?25l[40;116H2[12;1H[?25h[?25l[40;116H3[13;1H[?25h[?25l[40;116H4,0-1[14;1H[?25h[?25l[40;116H5,1  [15;1H[?25h[?25l[40;116H6[16;1H[?25h[?25l[40;116H7[17;1H[?25h[?25l[40;116H8[18;1H[?25h[?25l[40;1H[1m-- INSERT --[m[40;13H[K[40;115H18,18[9CAll[18;18H[?25h[?25l[40;119H7[18;17H[?25h[?25l[40;119H6[18;16H[?25h[?25l[40;119H7[18;17H[?25h[?25l[95m,[m[18;17H[K[40;119H6[18;16H[?25h[?25l[95m,[m[18;16H[K[40;119H5[18;15H[?25h[?25l[95m,[m[18;15H[K[40;119H4[18;14H[?25h[?25l[95m,[m[18;14H[K[40;119H3[18;13H[?25h[?25l[95m,[m[18;13H[K[40;119H2[18;12H[?25h[?25l[95m,[m[18;12H[K[40;119H1[18;11H[?25h[?25l[95m,[m[18;11H[K[40;119H0[18;10H[?25h[?25l,[18;10H[K[40;118H9 [18;9H[?25h[?25lN,[40;118H10[18;10H[?25h[?25lU,[40;119H1[18;11H[?25h[?25lL,[40;119H2[18;12H[?25h[?25l[95mNULL[m,[40;119H3[18;13H[?25h[?25l[40;119H4[18;14H[?25h[40;1H[K[18;13H[?25l[40;115H18,13[9CAll[18;13H[?25h[?25l[40;115H[K[40;1H:[?25hwq[?25l[?2004l[>4;m"ex10.c" 31L, 558B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ make clean 
+[?2004lrm -f ex10
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ make
+[?2004lcc -Wall -Wextra -g    ex10.c   -o ex10
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ lks[K[K[Kls
+[?2004l[0m[01;32mex10[0m  ex10.c  [01;34mlogs[0m  Makefile
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ ./ew[Kx10
+[?2004lstate 0: California
+state 1: (null)
+state 2: Washington
+state 3: Texas
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ ls
+[?2004l[0m[01;32mex10[0m  ex10.c  [01;34mlogs[0m  Makefile
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ vim ex10.c
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;40r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[40;1H"ex10.c" 31L, 558B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[38;5;81m#include [m[95m<stdio.h>[m[2;1H[K[3;1H[38;5;121mint[m main([38;5;121mint[m argc, [38;5;121mchar[m *argv[])[3;33H[K[4;1H{
+    [38;5;121mint[m i = [95m0[m;[7;5H[96m/* Go through each string in argv.
+     * argv[0] is skipped because it is normally the program name.
+     */[m
+    [93mfor[m (i = [95m1[m; i < argc; i++)
+    {[12;9Hprintf([95m"arg [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m, i, argv[i]);
+    }[15;5H[96m/* Make our own array of strings. */[m
+    [38;5;121mchar[m *states[] = {[17;9H[95m"California"[m,[18;9H[95mNULL[m,[19;9H[95m"Washington"[m,[20;9H[95m"Texas"[m
+    };[23;5H[38;5;121mint[m num_states = [95m4[m;[25;5H[93mfor[m (i = [95m0[m; i < num_states; i++)
+    {[27;9Hprintf([95m"state [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m, i, states[i]);
+    }[30;5H[93mreturn[m [95m0[m;
+}
+[94m~                                                                                                                                   [33;1H~                                                                                                                                   [34;1H~                                                                                                                                   [35;1H~                                                                                                                                   [36;1H~                                                                                                                                   [37;1H~                                                                                                                                   [38;1H~                                                                                                                                   [39;1H~                                                                                                                                   [m[40;115H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[40;115H2,0-1[2;1H[?25h[?25l[40;115H3,1  [3;1H[?25h[?25l
+[46m{[31;1H}[m[40;115H4[4;1H[?25h[?25l{[31;1H}[40;115H5[5;1H[?25h[?25l[40;115H6,0-1[6;1H[?25h[?25l[40;115H7,1  [7;1H[?25h[?25l[40;115H8[8;1H[?25h[?25l[40;115H9[9;1H[?25h[?25l[40;115H10,1[10;1H[?25h[?25l[40;116H1[11;1H[?25h[?25l[40;116H2[12;1H[?25h[?25l[40;116H3[13;1H[?25h[?25l[40;116H4,0-1[14;1H[?25h[?25l[40;116H5,1  [15;1H[?25h[?25l[40;116H6[16;1H[?25h[?25l[40;116H7[17;1H[?25h[?25l[40;116H8[18;1H[?25h[?25l[40;1H[1m-- INSERT --[m[40;13H[K[40;115H18,14[9CAll[18;14H[?25h[?25l[18;13H[K[40;119H3[18;13H[?25h[?25lNUL[18;12H[K[40;119H2[18;12H[?25h[?25l[18;11H[K[40;119H1[18;11H[?25h[?25l[18;10H[K[40;119H0[18;10H[?25h[?25l[18;9H[K[40;118H9 [18;9H[?25h[?25l:[40;118H10[18;10H[?25h[?25l[95m"[m[40;119H1[18;11H[?25h[?25l[18;10H[K[40;119H0[18;10H[?25h[?25l[18;9H[K[40;118H9 [18;9H[?25h[?25l[95m"[m[40;118H10[18;10H[?25h[?25l[95m"[m[40;119H1[18;11H[?25h[?25l[40;119H0[18;10H[?25h[?25l[95mN"[m[40;119H1[18;11H[?25h[?25l[95me"[m[40;119H2[18;12H[?25h[?25l[95mw"[m[40;119H3[18;13H[?25h[?25l[95mY"[m[40;119H4[18;14H[?25h[?25l[95mo"[m[40;119H5[18;15H[?25h[?25l[95mr"[m[40;119H6[18;16H[?25h[?25l[95mk"[m[40;119H7[18;17H[?25h[?25l[40;119H8[18;18H[?25h[?25l,[40;119H9[18;19H[?25h[40;1H[K[18;18H[?25l[40;115H18,18[9CAll[18;18H[?25h[?25l[40;115H[K[40;1H:[?25hwq[?25l[?2004l[>4;m"ex10.c" 31L, 563B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ vim ex10.c
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;40r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[40;1H"ex10.c" 31L, 563B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[38;5;81m#include [m[95m<stdio.h>[m[2;1H[K[3;1H[38;5;121mint[m main([38;5;121mint[m argc, [38;5;121mchar[m *argv[])[3;33H[K[4;1H{
+    [38;5;121mint[m i = [95m0[m;[7;5H[96m/* Go through each string in argv.
+     * argv[0] is skipped because it is normally the program name.
+     */[m
+    [93mfor[m (i = [95m1[m; i < argc; i++)
+    {[12;9Hprintf([95m"arg [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m, i, argv[i]);
+    }[15;5H[96m/* Make our own array of strings. */[m
+    [38;5;121mchar[m *states[] = {[17;9H[95m"California"[m,[18;9H[95m"NewYork"[m,[19;9H[95m"Washington"[m,[20;9H[95m"Texas"[m
+    };[23;5H[38;5;121mint[m num_states = [95m4[m;[25;5H[93mfor[m (i = [95m0[m; i < num_states; i++)
+    {[27;9Hprintf([95m"state [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m, i, states[i]);
+    }[30;5H[93mreturn[m [95m0[m;
+}
+[94m~                                                                                                                                   [33;1H~                                                                                                                                   [34;1H~                                                                                                                                   [35;1H~                                                                                                                                   [36;1H~                                                                                                                                   [37;1H~                                                                                                                                   [38;1H~                                                                                                                                   [39;1H~                                                                                                                                   [m[40;115H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[40;115H2,0-1[2;1H[?25h[?25l[40;115H3,1  [3;1H[?25h[?25l
+[46m{[31;1H}[m[40;115H4[4;1H[?25h[?25l{[31;1H}[40;115H5[5;1H[?25h[?25l[40;115H6,0-1[6;1H[?25h[?25l[40;115H7,1  [7;1H[?25h[?25l[40;115H8[8;1H[?25h[?25l[40;115H9[9;1H[?25h[?25l[40;115H10,1[10;1H[?25h[?25l[40;116H1[11;1H[?25h[?25l[40;116H2[12;1H[?25h[?25l[40;116H3[13;1H[?25h[?25l[40;116H4,0-1[14;1H[?25h[?25l[40;116H5,1  [15;1H[?25h[?25l[40;116H6[16;1H[?25h[?25l[40;116H7[17;1H[?25h[?25l[40;116H8[18;1H[?25h[?25l[40;116H9[19;1H[?25h[?25l[40;115H20[20;1H[?25h[?25l[40;116H1[21;1H[?25h[?25l[40;116H2,0-1[22;1H[?25h[?25l[40;116H3,1  [23;1H[?25h[?25l[40;116H4,0-1[24;1H[?25h[?25l[40;116H5,1  [25;1H[?25h[?25l[40;116H6[26;1H[?25h[?25l[40;116H7[27;1H[?25h[?25l[40;1H[1m-- INSERT --[m[40;13H[K[40;115H27,48[9CAll[27;48H[?25h[?25ld[40;119H9[27;49H[?25h[?25ld[40;118H50[27;50H[?25h[?25l[27;49H[K[40;118H49[27;49H[?25h[?25l[27;48H[K[40;119H8[27;48H[?25h[40;1H[K[27;47H[?25l[40;115H27,47[9CAll[27;47H[?25h[?25l[26;39r[39;1H
+[1;40r[26;5H[46m{[m[26;9H[K[27;5H[46m}[m[39;1H[94m~                                                                                                                                   [m[40;115H[K[40;115H27,5[10CAll[27;5H[?25h[?25l[40;116H6[26;5H[?25h[?25l[40;1H[1m-- INSERT --[m[40;115H[K[40;115H26,5[10CAll[26;5H[?25h[?25l[27;39r[27;1H[L[1;40r[26;5H[K[27;5H[46m{[m
+    }[40;115H[K[40;115H27,5[10CAll[28;5H[46m}[27;5H[?25h[m[40;1H[K[27;4H[?25l {
+    }[40;115H27,4[10CAll[27;4H[?25h[?25l[40;1H1 line less; before #3  2 seconds ago[40;115H[K[26;39r[39;1H
+[1;40r[26;5H[46m{
+[m    [46m}[m[39;1H[94m~                                                                                                                                   [m[40;1H[K[40;115H26,5[10CAll1 line less; before #3  2 seconds ago[40;115H[K[40;115H26,5[10CAll[26;5H[?25h[?25l[?25h[?25l[40;1H[1m-- INSERT --[m[40;14H[K[40;115H26,5[10CAll[26;5H[?25h[?25l[40;118H6[26;6H[?25h[?25l[27;39r[27;1H[L[1;40r[27;12H[46m [m
+    }[40;115H[K[40;115H27,6-13[7CAll[26;5H{[27;12H [?25h[?25li[40;118H7-14[27;14H[?25h[?25l[93mif[m[40;118H8-15[27;15H[?25h[?25l([40;118H9-16[27;16H[?25h[?25l)[40;118H8-15[27;15H[?25h[?25l[46m()[m[40;118H9-16[27;16H[?25h[?25l[46ms[m)s[46m)[m[40;118H10-17[27;17H[?25h[?25l[46mt[m)t[46m)[m[40;119H1-18[27;18H[?25h[?25l[46ma[m)a[46m)[m[40;119H2-19[27;19H[?25h[?25l[46mt[m)t[46m)[m[40;119H3-20[27;20H[?25h[?25l[46me[m)e[46m)[m[40;119H4-21[27;21H[?25h[?25l[46m[[m[97m[101m)[m[[97m[46m)[m[40;119H5-22[27;22H[?25h[?25l[46mi[m[97m[101m)[mi[97m[46m)[m[40;119H6-23[27;23H[?25h[?25l[46m][m)[40;119H4-21[27;21H[?25h[?25l[i][46m)[m[40;119H7-24[27;24H[?25h[?25l[46m [m) [46m)[m[40;119H8-25[27;25H[?25h[?25l[46m![m)![46m)[m[40;119H9-26[27;26H[?25h[?25l[46m=[m)=[46m)[m[40;118H20-27[27;27H[?25h[?25l[46m [m) [46m)[m[40;119H1-28[27;28H[?25h[?25l[46mN[m)N[46m)[m[40;119H2-29[27;29H[?25h[?25l[46mU[m)U[46m)[m[40;119H3-30[27;30H[?25h[?25l[46mL[m)L[46m)[m[40;119H4-31[27;31H[?25h[?25l[95mNUL[m[95m[46mL[m)[95mL[m[46m)[m[40;119H5-32[27;32H[?25h[?25l[40;119H6-33[27;33H[?25h[?25l[28;39r[28;1H[L[1;40r[40;115H[K[40;115H28,7-21[7CAll[27;15H([16C)[28;21H[?25h[?25l[28;13H{[46m{
+[m    [46m}[m[40;120H14[28;14H[?25h[?25l}[40;118H6-13[28;13H[?25h[?25l[1C[46m}[m
+    }[40;118H8-15[28;15H[?25h[?25l[40;118H7-14[28;14H[?25h[?25l[29;39r[29;1H[L[1;40r[28;14H[K[29;13H}[40;115H[K[40;115H29,6-13[7CAll[29;13H[46m}[?25h[?25l[30;39r[m[30;1H[L[1;40r[29;13H[K[30;13H}[40;115H[K[40;115H30,6-13[7CAll[30;13H[46m}[?25h[?25l[m[28;13H{[30;13H}[40;115H29[29;13H[?25h[?25l[40;118H7-17[29;17H[?25h[?25lp[40;118H8-18[29;18H[?25h[?25lr[40;118H9-19[29;19H[?25h[?25li[40;118H10-20[29;20H[?25h[?25ln[40;119H1-21[29;21H[?25h[?25lt[40;119H2-22[29;22H[?25h[?25lf[40;119H3-23[29;23H[?25h[?25l([40;119H4-24[29;24H[?25h[?25l)[40;119H3-23[29;23H[?25h[?25l[46m()[m[40;119H5-25[29;25H[?25h[?25l[40;119H4-24[29;24H[?25h[?25l[95m[46m"[m[95m)
+            }
+    }
+
+    return 0;
+}[29;24H"[m[95m[46m)[m[40;119H5-25[29;25H[?25h[?25l[95m[46m"[m)
+            }
+    }
+
+    [93mreturn[m [1C;
+}[29;25H[95m"[m[46m)[m[40;119H6-26[29;26H[?25h[?25l([2C)[40;119H5-25[29;25H[?25h[?25l[95ms"[m)[40;119H6-26[29;26H[?25h[?25l[95mt"[m)[40;119H7-27[29;27H[?25h[?25l[95ma"[m)[40;119H8-28[29;28H[?25h[?25l[95mt"[m)[40;119H9-29[29;29H[?25h[?25l[95me"[m)[40;118H20-30[29;30H[?25h[?25l[95m "[m)[40;119H1-31[29;31H[?25h[?25l[95m%"[m)[40;119H2-32[29;32H[?25h[?25l[38;5;224m%d[m[95m"[m)[40;119H3-33[29;33H[?25h[?25l[95m:"[m)[40;119H4-34[29;34H[?25h[?25l[95m "[m)[40;119H5-35[29;35H[?25h[?25l[95m%"[m)[40;119H6-36[29;36H[?25h[?25l[38;5;224m%s[m[95m"[m)[40;119H7-37[29;37H[?25h[?25l[95m."[m)[40;119H8-38[29;38H[?25h[?25l[95m"[m)[29;39H[K[40;119H7-37[29;37H[?25h[?25l[38;5;224m\"[m[95m)
+            }
+    }
+
+    return 0;
+}[m[40;119H8-38[29;38H[?25h[?25l[38;5;224mn[m[95m"[m)
+            }
+    }
+
+    [93mreturn[m [1C;
+}[40;119H9-39[29;39H[?25h[?25l[29;23H[46m([16C)[m[40;118H30-40[29;40H[?25h[?25l[46m,[m),[46m)[m[40;119H1-41[29;41H[?25h[?25l[46mi[m)i[46m)[m[40;119H2-42[29;42H[?25h[?25l[46m,[m),[46m)[m[40;119H3-43[29;43H[?25h[?25l[46ms[m)s[46m)[m[40;119H4-44[29;44H[?25h[?25l[46mt[m)t[46m)[m[40;119H5-45[29;45H[?25h[?25l[46ma[m)a[46m)[m[40;119H6-46[29;46H[?25h[?25l[46mt[m)t[46m)[m[40;119H7-47[29;47H[?25h[?25l[46me[m)e[46m)[m[40;119H8-48[29;48H[?25h[?25l[46m[[m[97m[101m)[m[[97m[46m)[m[40;119H9-49[29;49H[?25h[?25l[46mi[m[97m[101m)[mi[97m[46m)[m[40;118H40-50[29;50H[?25h[?25l[46m][m)[40;118H38-48[29;48H[?25h[?25l[i][46m)[m[40;118H41-51[29;51H[?25h[?25l[29;23H([24C[46m[[mi[46m][m)[40;119H0-50[29;50H[?25h[?25l[40;118H39-49[29;49H[?25h[?25l[40;119H8-48[29;48H[?25h[?25l[46ms[m[[46mi[m])s[46m[[mi[46m][m[40;119H9-49[29;49H[?25h[?25l[i][40;119H8-48[29;48H[?25h[?25l[28;13H[46m{[30;13H}[m[40;116H8,7-14 [28;14H[?25h[?25l[40;118H6-13[28;13H[?25h[?25l{[30;13H}[40;116H7[27;13H[?25h[?25l[40;118H7-14[27;14H[?25h[?25l[1C[46m([16C)[m[40;118H8-15[27;15H[?25h[?25l[40;118H9-16[27;16H[?25h[?25l([16C)[40;118H10-17[27;17H[?25h[?25l[40;119H1-18[27;18H[?25h[?25l[40;119H2-19[27;19H[?25h[?25l[40;119H3-20[27;20H[?25h[?25le[46m[[mi[46m][m[40;119H4-21[27;21H[?25h[?25l[46ms[m[[46mi[m] != [95mNULL[m)[27;21Hs[46m[[mi[46m][m[40;119H5-22[27;22H[?25h[?25l[i][28;13H[46m{[30;13H}[m[40;116H8,7-14 [28;14H[?25h[?25l{[30;13H}[40;116H9,12-22[29;22H[?25h[?25lf[46m([28C)[m[40;118H43-53[29;53H[?25h[?25l;[29;23H([28C)[40;119H4-54[29;54H[?25h[?25l[28;13H[46m{[30;13H}[m[40;115H30,7-14 [30;14H[?25h[?25l[31;39r[31;1H[L[1;40r[40;115H[K[40;115H31,6-13[7CAll[28;13H{[30;13H}[31;13H[?25h[?25le[40;118H7-14[31;14H[?25h[?25ll[40;118H8-15[31;15H[?25h[?25ls[40;118H9-16[31;16H[?25h[?25l[93melse[m[40;118H10-17[31;17H[?25h[?25l[32;39r[32;1H[L[1;40r[40;115H[K[40;115H32,7-21[7CAll[32;21H[?25h[?25l[32;13H{[46m{
+[m    [46m}[m[40;120H14[32;14H[?25h[?25l}[40;118H6-13[32;13H[?25h[?25l[1C[46m}[m
+    }[40;118H8-15[32;15H[?25h[?25l[40;118H7-14[32;14H[?25h[?25l[33;39r[33;1H[L[1;40r[32;14H[K[33;13H}[40;115H[K[40;115H33,6-13[7CAll[33;13H[46m}[?25h[?25l[34;39r[m[34;1H[L[1;40r[33;13H[K[34;13H}[40;115H[K[40;115H34,6-13[7CAll[34;13H[46m}[?25h[?25l[m[32;13H{[34;13H}[40;116H3[33;13H[?25h[?25l[40;118H7-17[33;17H[?25h[?25lp[40;118H8-18[33;18H[?25h[?25lr[40;118H9-19[33;19H[?25h[?25li[40;118H10-20[33;20H[?25h[?25ln[40;119H1-21[33;21H[?25h[?25lt[40;119H2-22[33;22H[?25h[?25lf[40;119H3-23[33;23H[?25h[?25l([40;119H4-24[33;24H[?25h[?25l)[40;119H3-23[33;23H[?25h[?25l[46m()[m[40;119H5-25[33;25H[?25h[?25l[40;119H4-24[33;24H[?25h[?25l[95m[46m"[m[95m)
+            }
+    }
+
+    return 0;
+}[33;24H"[m[95m[46m)[m[40;119H5-25[33;25H[?25h[?25l[95m[46m"[m)
+            }
+    }
+
+    [93mreturn[m [1C;
+}[33;25H[95m"[m[46m)[m[40;119H6-26[33;26H[?25h[?25l([2C)[40;119H5-25[33;25H[?25h[?25l[95ms"[m)[40;119H6-26[33;26H[?25h[?25l[95mt"[m)[40;119H7-27[33;27H[?25h[?25l[95ma"[m)[40;119H8-28[33;28H[?25h[?25l[95mt"[m)[40;119H9-29[33;29H[?25h[?25l[95me"[m)[40;118H20-30[33;30H[?25h[?25l[95mt"[m)[40;119H1-31[33;31H[?25h[?25l[95m"[m)[33;32H[K[40;119H0-30[33;30H[?25h[?25l[95m"[m)[33;31H[K[40;118H19-29[33;29H[?25h[?25l[95me"[m)[40;118H20-30[33;30H[?25h[?25l[95m "[m)[40;119H1-31[33;31H[?25h[?25l[95m%"[m)[40;119H2-32[33;32H[?25h[?25l[38;5;224m%d[m[95m"[m)[40;119H3-33[33;33H[?25h[?25l[95m:"[m)[40;119H4-34[33;34H[?25h[?25l[95m "[m)[40;119H5-35[33;35H[?25h[?25l[95m%"[m)[40;119H6-36[33;36H[?25h[?25l[38;5;224m%s[m[95m"[m)[40;119H7-37[33;37H[?25h[?25l[38;5;224m\"[m[95m)
+            }
+    }
+
+    return 0;
+}[m[40;119H8-38[33;38H[?25h[?25l[38;5;224mn[m[95m"[m)
+            }
+    }
+
+    [93mreturn[m [1C;
+}[40;119H9-39[33;39H[?25h[?25l[33;23H[46m([16C)[m[40;118H30-40[33;40H[?25h[?25l[46m,[m),[46m)[m[40;119H1-41[33;41H[?25h[?25l[46mi[m)i[46m)[m[40;119H2-42[33;42H[?25h[?25l[46m,[m),[46m)[m[40;119H3-43[33;43H[?25h[?25l)[33;43H[K[33;42H[46m)[m[40;119H2-42[33;42H[?25h[?25l)[33;42H[K[33;41H[46m)[m[40;119H1-41[33;41H[?25h[?25l[33;23H([17C)[40;119H0-40[33;40H[?25h[?25l[40;118H29-39[33;39H[?25h[?25l[40;119H8-38[33;38H[?25h[?25l[40;119H7-37[33;37H[?25h[?25l[95m%[m[38;5;224m\n[m[95m"[m,)[33;41H[K[40;119H6-36[33;36H[?25h[?25l[38;5;224m\n[m[95m"[m,)[33;40H[K[40;119H5-35[33;35H[?25h[?25l[95m{[m[38;5;224m\n[m[95m"[m,)[95m[46m{[m[34;13H[46m}[m[40;119H6-36[33;36H[?25h[?25l[95m}[m[38;5;224m\n[m[95m"[m,)[40;119H5-35[33;35H[?25h[?25l[1C[95m[46m}[m[34;13H}[40;119H7-37[33;37H[?25h[?25l[38;5;224m[46m\[m[38;5;224mn[m[95m"[m,)[33;41H[K[33;36H[38;5;224m\[m[34;13H[46m}[m[40;119H6-36[33;36H[?25h[?25l[38;5;224m[46m\[m[38;5;224mn[m[95m"[m,)[33;40H[K[33;35H[38;5;224m\[m[34;13H}[40;119H5-35[33;35H[?25h[?25l[95m([m[38;5;224m\n[m[95m"[m,)[95m[46m([m[4C[46m)[m[40;119H6-36[33;36H[?25h[?25l[95m)[m[38;5;224m\n[m[95m"[m[46m,[m)[40;119H5-35[33;35H[?25h[?25l[1C[95m[46m)[m[3C,[40;119H7-37[33;37H[?25h[?25l[40;119H6-36[33;36H[?25h[?25l[95m[46mn[m[95m)[m[38;5;224m\n[m[95m"[m,)[33;36H[95mn[m[95m[46m)[m[40;119H7-37[33;37H[?25h[?25l[95m[46mu[m[95m)[m[38;5;224m\n[m[95m"[m,)[33;37H[95mu[m[95m[46m)[m[40;119H8-38[33;38H[?25h[?25l[95m[46ml[m[95m)[m[38;5;224m\n[m[95m"[m,)[33;38H[95ml[m[95m[46m)[m[40;119H9-39[33;39H[?25h[?25l[95m[46ml[m[95m)[m[38;5;224m\n[m[95m"[m,)[33;39H[95ml[m[95m[46m)[m[40;118H30-40[33;40H[?25h[?25l[40;119H1-41[33;41H[?25h[?25l[95m(null)[m[40;119H2-42[33;42H[?25h[?25l[40;119H3-43[33;43H[?25h[?25l[40;119H4-44[33;44H[?25h[?25l[33;23H[46m([21C)[m[40;119H5-45[33;45H[?25h[?25l[46mi[m)i[46m)[m[40;119H6-46[33;46H[?25h[?25l)[33;46H[K[33;45H[46m)[m[40;119H5-45[33;45H[?25h[?25l)[33;45H[K[33;44H[46m)[m[40;119H4-44[33;44H[?25h[?25l[46m,[m),[46m)[m[40;119H5-45[33;45H[?25h[?25l[46mi[m)i[46m)[m[40;119H6-46[33;46H[?25h[?25l[40;119H7-47[33;47H[?25h[?25l'[33;23H([22C)[40;119H8-48[33;48H[?25h[?25l;[40;119H9-49[33;49H[?25h[?25l[33;48H[K[40;119H8-48[33;48H[?25h[?25l[33;47H[K[33;23H[46m([22C)[m[40;119H7-47[33;47H[?25h[?25l;[33;23H([22C)[40;119H8-48[33;48H[?25h[?25l[32;13H[46m{[34;13H}[m[40;116H4,7-14 [34;14H[?25h[40;1H[K[34;13H[?25l[40;115H34,6-13[7CAll[34;13H[?25h[?25l[40;115H[K[40;1H:[?25hwq[?25l[?2004l[>4;m"ex10.c" 38L, 662B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ make clean 
+[?2004lrm -f ex10
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ make
+[?2004lcc -Wall -Wextra -g    ex10.c   -o ex10
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ ./ex10 
+[?2004lstate 0: California
+state 1: NewYork
+state 2: Washington
+state 3: Texas
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ ls
+[?2004l[0m[01;32mex10[0m  ex10.c  [01;34mlogs[0m  Makefile
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ vim ex10.c
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;40r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[40;1H"ex10.c" 38L, 662B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[38;5;81m#include [m[95m<stdio.h>[m[2;1H[K[3;1H[38;5;121mint[m main([38;5;121mint[m argc, [38;5;121mchar[m *argv[])[3;33H[K[4;1H{
+    [38;5;121mint[m i = [95m0[m;[7;5H[96m/* Go through each string in argv.
+     * argv[0] is skipped because it is normally the program name.
+     */[m
+    [93mfor[m (i = [95m1[m; i < argc; i++)
+    {[12;9Hprintf([95m"arg [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m, i, argv[i]);
+    }[15;5H[96m/* Make our own array of strings. */[m
+    [38;5;121mchar[m *states[] = {[17;9H[95m"California"[m,[18;9H[95m"NewYork"[m,[19;9H[95m"Washington"[m,[20;9H[95m"Texas"[m
+    };[23;5H[38;5;121mint[m num_states = [95m4[m;[25;5H[93mfor[m (i = [95m0[m; i < num_states; i++)
+    {[27;13H[93mif[m(states[i] != [95mNULL[m)[28;13H{[29;17Hprintf([95m"state [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m,i,states[i]);[30;13H}[31;13H[93melse[m[32;13H{[33;17Hprintf([95m"state [m[38;5;224m%d[m[95m: (null)[m[38;5;224m\n[m[95m"[m,i);[34;13H}
+    }[37;5H[93mreturn[m [95m0[m;
+}
+[94m~                                                                                                                                   [m[40;115H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[40;115H2,0-1[2;1H[?25h[?25l[40;115H3,1  [3;1H[?25h[?25l
+[46m{[38;1H}[m[40;115H4[4;1H[?25h[?25l{[38;1H}[40;115H5[5;1H[?25h[?25l[40;115H6,0-1[6;1H[?25h[?25l[40;115H7,1  [7;1H[?25h[?25l[40;115H8[8;1H[?25h[?25l[40;115H9[9;1H[?25h[?25l[40;115H10,1[10;1H[?25h[?25l[40;116H1[11;1H[?25h[?25l[40;116H2[12;1H[?25h[?25l[40;116H3[13;1H[?25h[?25l[40;116H4,0-1[14;1H[?25h[?25l[40;116H5,1  [15;1H[?25h[?25l[40;116H6[16;1H[?25h[?25l[40;116H7[17;1H[?25h[?25l[40;116H8[18;1H[?25h[?25l[40;116H9[19;1H[?25h[?25l[40;115H20[20;1H[?25h[?25l[40;116H1[21;1H[?25h[?25l[40;1H[1m-- INSERT --[m[40;13H[K[40;115H21,7[10CAll[21;7H[?25h[?25l[22;39r[22;1H[L[1;40r[40;115H[K[40;115H22,5[10CAll[22;5H[?25h[?25l[23;39r[23;1H[L[1;40r[40;115H[K[40;115H23,5[10CTop[23;5H[?25h[?25li[40;118H6[23;6H[?25h[?25l[93mif[m[40;118H7[23;7H[?25h[?25l([28;5H[97m[101m{[30;13H{[32;13H}[34;13H{[36;13H}[m[40;118H8[23;8H[?25h[?25l)[28;5H{[30;13H{[32;13H}[34;13H{[36;13H}[40;118H7[23;7H[?25h[?25l[46m()[m[40;118H9[23;9H[?25h[?25l[40;118H8[23;8H[?25h[?25l[46ma[m)a[46m)[m[40;118H9[23;9H[?25h[?25l[46mr[m)r[46m)[m[40;118H10[23;10H[?25h[?25l[46mg[m)g[46m)[m[40;119H1[23;11H[?25h[?25l[46mc[m)c[46m)[m[40;119H2[23;12H[?25h[?25l[46m [m) [46m)[m[40;119H3[23;13H[?25h[?25l[46m>[m)>[46m)[m[40;119H4[23;14H[?25h[?25l[95m[46m1[m)[95m1[m[46m)[m[40;119H5[23;15H[?25h[?25l)[23;15H[K[23;14H[46m)[m[40;119H4[23;14H[?25h[?25l[46m [m) [46m)[m[40;119H5[23;15H[?25h[?25l[95m[46m1[m)[95m1[m[46m)[m[40;119H6[23;16H[?25h[?25l[40;119H7[23;17H[?25h[?25l[24;39r[24;1H[L[1;40r[40;115H[K[40;115H24,6-13[7CTop[23;7H([8C)[24;13H[?25h[?25l    {[40;119H   [24;6H[?25h[?25l}[40;118H5[24;5H[?25h[?25l[46m{}[m[40;118H6[24;6H[?25h[?25l[25;39r[25;1H[L[1;40r[24;6H[K[25;5H}[40;115H[K[40;115H25,5[10CTop[25;5H[46m}[?25h[?25l[26;39r[m[26;1H[L[1;40r[25;5H[K[26;5H}[40;115H[K[40;115H26,5[10CTop[26;5H[46m}[?25h[?25l[m[24;5H{[26;5H}[40;116H5[25;5H[?25h[?25l[40;118H6-9[25;9H[?25h[?25ls[40;118H7-10[25;10H[?25h[?25lt[40;118H8-11[25;11H[?25h[?25lt[40;118H9-12[25;12H[?25h[?25la[40;118H10-13[25;13H[?25h[?25lr[40;119H1-14[25;14H[?25h[?25l[25;13H[K[40;119H0-13[25;13H[?25h[?25l[25;12H[K[40;118H9-12 [25;12H[?25h[?25l[25;11H[K[40;118H8-11[25;11H[?25h[?25la[40;118H9-12[25;12H[?25h[?25lt[40;118H10-13[25;13H[?25h[?25le[40;119H1-14[25;14H[?25h[?25lr[40;119H2-15[25;15H[?25h[?25l[25;14H[K[40;119H1-14[25;14H[?25h[?25l[25;13H[K[40;119H0-13[25;13H[?25h[?25le[40;119H1-14[25;14H[?25h[?25ls[40;119H2-15[25;15H[?25h[?25l[[40;119H3-16[25;16H[?25h[?25l[95m1[m[40;119H4-17[25;17H[?25h[?25l][40;119H2-15[25;15H[?25h[?25l[46m[[1C][m[40;119H5-18[25;18H[?25h[?25l[40;119H4-17[25;17H[?25h[?25l][25;17H[K[25;16H[46m][m[40;119H3-16[25;16H[?25h[?25l[95m[46m0[m][95m0[m[46m][m[40;119H4-17[25;17H[?25h[?25l[40;119H5-18[25;18H[?25h[?25l[[1C][40;119H6-19[25;19H[?25h[?25l=[40;119H7-20[25;20H[?25h[?25l[40;119H8-21[25;21H[?25h[?25la[40;119H9-22[25;22H[?25h[?25lr[40;118H20-23[25;23H[?25h[?25lg[40;119H1-24[25;24H[?25h[?25lt[40;119H2-25[25;25H[?25h[?25l[25;24H[K[40;119H1-24[25;24H[?25h[?25lv[40;119H2-25[25;25H[?25h[?25l[[40;119H3-26[25;26H[?25h[?25l[95m1[m[40;119H4-27[25;27H[?25h[?25l][40;119H2-25[25;25H[?25h[?25l[46m[[1C][m[40;119H5-28[25;28H[?25h[?25l;[[1C][40;119H6-29[25;29H[?25h[?25l[24;5H[46m{[26;5H}[m[40;116H6,6    [26;6H[?25h[?25l[24;5H{[26;5H}[40;116H7,1[27;1H[?25h[40;1H[K[27;1H[?25l[40;115H27,0-1[8CTop[27;1H[?25h[?25l[40;115H[K[40;1H:[?25hwq[?25l[?2004l[>4;m"ex10.c" 43L, 718B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ make[K[K[K[Kmake clean 
+[?2004lrm -f ex10
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$  make
+[?2004lcc -Wall -Wextra -g    ex10.c   -o ex10
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ ./e1[Kx10 Sichuan[K[K[K[K[KChuan
+[?2004larg 1: SiChuan
+state 0: SiChuan
+state 1: NewYork
+state 2: Washington
+state 3: Texas
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ ls
+[?2004l[0m[01;32mex10[0m  ex10.c  [01;34mlogs[0m  Makefile
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ vim ex10.c
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;40r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[40;1H"ex10.c" 43L, 718B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[38;5;81m#include [m[95m<stdio.h>[m[2;1H[K[3;1H[38;5;121mint[m main([38;5;121mint[m argc, [38;5;121mchar[m *argv[])[3;33H[K[4;1H{
+    [38;5;121mint[m i = [95m0[m;[7;5H[96m/* Go through each string in argv.
+     * argv[0] is skipped because it is normally the program name.
+     */[m
+    [93mfor[m (i = [95m1[m; i < argc; i++)
+    {[12;9Hprintf([95m"arg [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m, i, argv[i]);
+    }[15;5H[96m/* Make our own array of strings. */[m
+    [38;5;121mchar[m *states[] = {[17;9H[95m"California"[m,[18;9H[95m"NewYork"[m,[19;9H[95m"Washington"[m,[20;9H[95m"Texas"[m
+    };[23;5H[93mif[m(argc > [95m1[m)
+    {[25;9Hstates[[95m0[m] = argv[[95m1[m];
+    }[28;5H[38;5;121mint[m num_states = [95m4[m;[30;5H[93mfor[m (i = [95m0[m; i < num_states; i++)
+    {[32;13H[93mif[m(states[i] != [95mNULL[m)[33;13H{[34;17Hprintf([95m"state [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m,i,states[i]);[35;13H}[36;13H[93melse[m[37;13H{[38;17Hprintf([95m"state [m[38;5;224m%d[m[95m: (null)[m[38;5;224m\n[m[95m"[m,i);[39;13H}[40;115H1,1[11CTop[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[40;115H2,0-1[2;1H[?25h[?25l[40;115H3,1  [3;1H[?25h[?25l[40;115H4[4;1H[?25h[?25l[40;115H5[5;1H[?25h[?25l[40;115H6,0-1[6;1H[?25h[?25l[40;115H7,1  [7;1H[?25h[?25l[40;115H8[8;1H[?25h[?25l[40;115H9[9;1H[?25h[?25l[40;115H10,1[10;1H[?25h[?25l[40;116H1[11;1H[?25h[?25l[40;116H2[12;1H[?25h[?25l[40;116H3[13;1H[?25h[?25l[40;116H4,0-1[14;1H[?25h[?25l[40;116H5,1  [15;1H[?25h[?25l[40;116H6[16;1H[?25h[?25l[40;116H7[17;1H[?25h[?25l[40;116H8[18;1H[?25h[?25l[40;116H9[19;1H[?25h[?25l[40;115H20[20;1H[?25h[?25l[40;116H1[21;1H[?25h[?25l[40;116H2,0-1[22;1H[?25h[?25l[40;116H3,1  [23;1H[?25h[?25l[40;116H4[24;1H[?25h[?25l[40;116H5[25;1H[?25h[?25l[40;116H6[26;1H[?25h[?25l[40;116H7,0-1[27;1H[?25h[?25l[40;116H8,1  [28;1H[?25h[?25l[40;116H9,0-1[29;1H[?25h[?25l[40;115H30,1  [30;1H[?25h[?25l[40;116H1[31;1H[?25h[?25l[40;116H2,1-8[32;8H[?25h[?25l[40;116H3[33;8H[?25h[?25l[40;116H4[34;8H[?25h[?25l[40;116H5[35;8H[?25h[?25l[40;116H6[36;8H[?25h[?25l[40;116H7[37;8H[?25h[?25l[40;116H8[38;8H[?25h[?25l[40;116H9[39;8H[?25h[?25l[40;116H8[38;8H[?25h[?25l[40;116H7[37;8H[?25h[?25l[40;116H6[36;8H[?25h[?25l[40;116H5[35;8H[?25h[?25l[40;116H4[34;8H[?25h[?25l[40;116H3[33;8H[?25h[?25l[40;116H2[32;8H[?25h[?25l[40;116H1,1  [31;1H[?25h[?25l[40;116H0[30;1H[?25h[?25l[40;115H29,0-1[29;1H[?25h[?25l[40;116H8,1  [28;1H[?25h[?25l[40;116H7,0-1[27;1H[?25h[?25l[40;116H6,1  [26;1H[?25h[?25l[40;116H5[25;1H[?25h[?25l[40;116H4[24;1H[?25h[?25l[40;116H3[23;1H[?25h[?25l[40;116H2,0-1[22;1H[?25h[?25l[40;116H1,1  [21;1H[?25h[?25l[40;116H0[20;1H[?25h[?25l[40;115H19[19;1H[?25h[?25l[40;116H8[18;1H[?25h[?25l[40;116H7[17;1H[?25h[?25l[40;116H6[16;1H[?25h[?25l[40;116H5[15;1H[?25h[?25l[40;116H6[16;1H[?25h[?25l[40;116H7[17;1H[?25h[?25l[40;116H8[18;1H[?25h[?25l[40;116H9[19;1H[?25h[?25l[40;115H20[20;1H[?25h[?25l[40;116H1[21;1H[?25h[?25l[40;116H2,0-1[22;1H[?25h[?25l[40;116H3,1  [23;1H[?25h[?25l[40;116H4[24;1H[?25h[?25l[40;116H5[25;1H[?25h[?25l[40;1H[1m-- INSERT --[m[40;13H[K[40;115H25,26-29      Top[25;29H[?25h[?25l[24;5H[46m{[26;5H}[m[40;116H4,6    [24;6H[?25h[?25l[25;39r[25;1H[L[1;40r[26;5H[46m    [m
+    }[40;115H[K[40;115H25,6-13[7CTop[24;5H{[26;5H    [25;13H[?25h[?25ls[40;118H7-14[25;14H[?25h[?25l[25;13H[K[40;118H6-13[25;13H[?25h[?25l[40;118H5-12[25;12H[?25h[?25l[40;118H4-11[25;11H[?25h[?25l[40;118H3-10[25;10H[?25h[?25l[40;118H2-9 [25;9H[?25h[?25ls[40;118H3-10[25;10H[?25h[?25lt[40;118H4-11[25;11H[?25h[?25la[40;118H5-12[25;12H[?25h[?25l[25;11H[K[40;118H4-11[25;11H[?25h[?25l[25;10H[K[40;118H3-10[25;10H[?25h[?25l[25;9H[K[40;118H2-9 [25;9H[?25h[?25lc[40;118H3-10[25;10H[?25h[?25lh[40;118H4-11[25;11H[?25h[?25la[40;118H5-12[25;12H[?25h[?25l[38;5;121mchar[m[40;118H6-13[25;13H[?25h[?25l[40;118H7-14[25;14H[?25h[?25l*[40;118H8-15[25;15H[?25h[?25l[40;118H9-16[25;16H[?25h[?25l[40;118H8-15[25;15H[?25h[?25lt[40;118H9-16[25;16H[?25h[?25le[40;118H10-17[25;17H[?25h[?25lm[40;119H1-18[25;18H[?25h[?25lp[40;119H2-19[25;19H[?25h[?25l[40;119H3-20[25;20H[?25h[?25l=[40;119H4-21[25;21H[?25h[?25l[40;119H5-22[25;22H[?25h[?25ls[40;119H6-23[25;23H[?25h[?25lt[40;119H7-24[25;24H[?25h[?25la[40;119H8-25[25;25H[?25h[?25lt[40;119H9-26[25;26H[?25h[?25le[40;118H20-27[25;27H[?25h[?25l[[26;28H[97m[101m;[m[40;119H1-28[25;28H[?25h[?25l[95m0[m[40;119H2-29[25;29H[?25h[?25l][26;28H;[40;119H0-27[25;27H[?25h[?25l[46m[[1C][m[40;119H3-30[25;30H[?25h[?25l;[[1C][40;119H4-31[25;31H[?25h[?25l[40;116H6,26-29[26;29H[?25h[?25l[27;39r[27;1H[L[1;40r[40;115H[K[40;115H27,2-9[8CTop[27;9H[?25h[?25la[40;118H3-10[27;10H[?25h[?25lr[40;118H4-11[27;11H[?25h[?25lg[40;118H5-12[27;12H[?25h[?25lc[40;118H6-13[27;13H[?25h[?25l[27;12H[K[40;118H5-12[27;12H[?25h[?25lv[40;118H6-13[27;13H[?25h[?25l[[40;118H7-14[27;14H[?25h[?25l[95m1[m[40;118H8-15[27;15H[?25h[?25l][40;118H6-13[27;13H[?25h[?25l[46m[[1C][m[40;118H9-16[27;16H[?25h[?25l[[1C][40;118H10-17[27;17H[?25h[?25l=[40;119H1-18[27;18H[?25h[?25l[40;119H2-19[27;19H[?25h[?25lt[40;119H3-20[27;20H[?25h[?25le[40;119H4-21[27;21H[?25h[?25lm[40;119H5-22[27;22H[?25h[?25lp[40;119H6-23[27;23H[?25h[?25l;[40;119H7-24[27;24H[?25h[?25l[24;5H[46m{[28;5H}[m[40;116H8,6    [28;6H[?25h[40;1H[K[28;5H[?25l[40;115H28,5[10CTop[28;5H[?25h[?25l[40;115H[K[40;1H:[?25hwq[?25l[?2004l[>4;m"ex10.c" 45L, 759B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ mek[K[Kake clean 
+[?2004lrm -f ex10
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ make 
+[?2004lcc -Wall -Wextra -g    ex10.c   -o ex10
+[01m[Kex10.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kex10.c:25:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kstate[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kstates[m[K’?
+   25 |         char *temp = [01;31m[Kstate[m[K[0];
+      |                      [01;31m[K^~~~~[m[K
+      |                      [32m[Kstates[m[K
+[01m[Kex10.c:25:22:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+make: *** [<builtin>: ex10] Error 1
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ vim e[Kex10.c
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;40r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[40;1H"ex10.c" 45L, 759B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[38;5;81m#include [m[95m<stdio.h>[m[2;1H[K[3;1H[38;5;121mint[m main([38;5;121mint[m argc, [38;5;121mchar[m *argv[])[3;33H[K[4;1H{
+    [38;5;121mint[m i = [95m0[m;[7;5H[96m/* Go through each string in argv.
+     * argv[0] is skipped because it is normally the program name.
+     */[m
+    [93mfor[m (i = [95m1[m; i < argc; i++)
+    {[12;9Hprintf([95m"arg [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m, i, argv[i]);
+    }[15;5H[96m/* Make our own array of strings. */[m
+    [38;5;121mchar[m *states[] = {[17;9H[95m"California"[m,[18;9H[95m"NewYork"[m,[19;9H[95m"Washington"[m,[20;9H[95m"Texas"[m
+    };[23;5H[93mif[m(argc > [95m1[m)
+    {[25;9H[38;5;121mchar[m *temp = state[[95m0[m];[26;9Hstates[[95m0[m] = argv[[95m1[m];[27;9Hargv[[95m1[m] = temp;
+    }[30;5H[38;5;121mint[m num_states = [95m4[m;[32;5H[93mfor[m (i = [95m0[m; i < num_states; i++)
+    {[34;13H[93mif[m(states[i] != [95mNULL[m)[35;13H{[36;17Hprintf([95m"state [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m,i,states[i]);[37;13H}[38;13H[93melse[m[39;13H{[40;115H1,1[11CTop[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[40;115H2,0-1[2;1H[?25h[?25l[40;115H3,1  [3;1H[?25h[?25l[40;115H4[4;1H[?25h[?25l[40;115H5[5;1H[?25h[?25l[40;115H6,0-1[6;1H[?25h[?25l[40;115H7,1  [7;1H[?25h[?25l[40;115H8[8;1H[?25h[?25l[40;115H9[9;1H[?25h[?25l[40;115H10,1[10;1H[?25h[?25l[40;116H1[11;1H[?25h[?25l[40;116H2[12;1H[?25h[?25l[40;116H3[13;1H[?25h[?25l[40;116H4,0-1[14;1H[?25h[?25l[40;116H5,1  [15;1H[?25h[?25l[40;116H6[16;1H[?25h[?25l[40;116H7[17;1H[?25h[?25l[40;116H8[18;1H[?25h[?25l[40;116H9[19;1H[?25h[?25l[40;115H20[20;1H[?25h[?25l[40;116H1[21;1H[?25h[?25l[40;116H2,0-1[22;1H[?25h[?25l[40;116H3,1  [23;1H[?25h[?25l[40;116H4[24;1H[?25h[?25l[40;116H5,1-8[25;8H[?25h[?25l[40;1H[1m-- INSERT --[m[40;13H[K[40;115H25,24-31      Top[25;31H[?25h[?25l[46m[[1C][m[40;119H3-30[25;30H[?25h[?25l[40;119H2-29[25;29H[?25h[?25l[40;119H1-28[25;28H[?25h[?25l[40;119H0-27[25;27H[?25h[?25l[[1C][40;118H19-26[25;26H[?25h[?25le[46m[[1C][m[40;118H20-27[25;27H[?25h[?25l[46ms[m[[95m[46m0[m];s[46m[[m[95m0[m[46m][m[40;119H1-28[25;28H[?25h[?25l[40;119H2-29[25;29H[?25h[?25l[40;119H3-30[25;30H[?25h[40;1H[K[25;29H[?25l[[1C][40;115H25,22-29      Top[25;29H[?25h[?25l[40;115H[K[40;1H:[?25hwq[?25l[?2004l[>4;m"ex10.c" 45L, 760B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ make clean 
+[?2004lrm -f ex10
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ ls
+[?2004lex10.c  [0m[01;34mlogs[0m  Makefile
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ make
+[?2004lcc -Wall -Wextra -g    ex10.c   -o ex10
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ ./ex10 SiChuan
+[?2004larg 1: SiChuan
+state 0: SiChuan
+state 1: NewYork
+state 2: Washington
+state 3: Texas
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ cat ex10.c
+[?2004l#include <stdio.h>
+
+int main(int argc, char *argv[])
+{
+    int i = 0;
+
+    /* Go through each string in argv.
+     * argv[0] is skipped because it is normally the program name.
+     */
+    for (i = 1; i < argc; i++)
+    {
+        printf("arg %d: %s\n", i, argv[i]);
+    }
+
+    /* Make our own array of strings. */
+    char *states[] = {
+        "California",
+        "NewYork",
+        "Washington",
+        "Texas"
+    };
+
+    if(argc > 1)
+    {
+	char *temp = states[0];
+    	states[0] = argv[1];
+	argv[1] = temp;
+    }
+
+    int num_states = 4;
+
+    for (i = 0; i < num_states; i++)
+    {
+	    if(states[i] != NULL)
+	    {
+	    	printf("state %d: %s\n",i,states[i]);
+	    }
+	    else
+	    {
+	    	printf("state %d: (null)\n",i);
+	    }
+    }
+
+    return 0;
+}
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ vim ca[K[Kex10
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;40r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[40;1H"ex10" [noeol][converted] 8L, 18085B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[38;5;81m^?[mELF[38;5;81m^B^A^A^@^@^@^@^@^@^@^@^@^C^@[m>[38;5;81m^@^A^@^@^@<80>^P^@^@^@^@^@^@[m@[38;5;81m^@^@^@^@^@^@^@[mX;[38;5;81m^@^@^@^@^@^@^@^@^@^@[m@[38;5;81m^@[m8[38;5;81m^@^M^@[m@[38;5;81m^@[m%[38;5;81m^@[m$[38;5;81m^@^F^@^@^@^D^@^@@[2;1H^@[m@[38;5;81m^@^@^@^@^@^@^@[m@[38;5;81m^@^@^@^@^@^@^@[m@[38;5;81m^@^@^@^@^@^@^@[mØ[2;49H[38;5;81m^B^@^@^@^@^@^@[mØ[2;64H[38;5;81m^B^@^@^@^@^@^@^H^@^@^@^@^@^@^@^C^@^@^@^D^@^@^@^X^C^@^@^@^@^@^@^X^C^@^^[3;1H@^@^@^@^@^X^C^@^@^@^@^@^@^\^@^@^@^@^@^@^@^\^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^A^@^@^@^D^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^^[4;1H@^@^@<88>^F^@^@^@^@^@^@<88>^F^@^@^@^@^@^@^@^P^@^@^@^@^@^@^A^@^@^@^E^@^@^@^@^P^@^@^@^@^@^@^@^P^@^@^@^@^@^@^@^P^@^@^@^@^@^@[m½[4;123H[38;5;81m^B^@^@^@^@@[5;1H^@^@[m½[5;6H[38;5;81m^B^@^@^@^@^@^@^@^P^@^@^@^@^@^@^A^@^@^@^D^@^@^@^@[m [38;5;81m^@^@^@^@^@^@^@[m [38;5;81m^@^@^@^@^@^@^@[m [38;5;81m^@^@^@^@^@^@[m4[38;5;81m^A^@^@^@^@^@^@[m4[38;5;81m^A^@^@^@^@^@^@^@^P^@@[6;1H^@^@^@^@^@^A^@^@^@^F^@^@^@[m°[6;28H-[38;5;81m^@^@^@^@^@^@[m°[6;42H=[38;5;81m^@^@^@^@^@^@[m°[6;56H=[38;5;81m^@^@^@^@^@^@[m`[38;5;81m^B^@^@^@^@^@^@[mh[38;5;81m^B^@^@^@^@^@^@^@^P^@^@^@^@^@^@^B^@^@^@^F^@^@^@[mÀ--[7;1H[38;5;81m^@^@^@^@^@^@[mÀ=[38;5;81m^@^@^@^@^@^@[mÀ=[38;5;81m^@^@^@^@^@^@[mð[7;42H[38;5;81m^A^@^@^@^@^@^@[mð[7;57H[38;5;81m^A^@^@^@^@^@^@^H^@^@^@^@^@^@^@^D^@^@^@^D^@^@^@[m8[38;5;81m^C^@^@^@^@^@^@[m8[38;5;81m^C^@^@^@^@^@^@@[m[8;1H8[38;5;81m^C^@^@^@^@^@^@[m0[38;5;81m^@^@^@^@^@^@^@[m0[38;5;81m^@^@^@^@^@^@^@^H^@^@^@^@^@^@^@^D^@^@^@^D^@^@^@[mh[38;5;81m^C^@^@^@^@^@^@[mh[38;5;81m^C^@^@^@^@^@^@[mh[38;5;81m^C^@^@^@^@^@^@[mD[38;5;81m^@^@^@^@^^[9;1H@^@^@[mD[38;5;81m^@^@^@^@^@^@^@^D^@^@^@^@^@^@^@[mSåtd[38;5;81m^D^@^@^@[m8[38;5;81m^C^@^@^@^@^@^@[m8[38;5;81m^C^@^@^@^@^@^@[m8[38;5;81m^C^@^@^@^@^@^@[m0[38;5;81m^@^@^@^@^@^@^@[m0[38;5;81m^@^@^@^@^@^@^@^H^@^@^@^^[10;1H@^@^@^@[mPåtd[38;5;81m^D^@^@^@[mT [38;5;81m^@^@^@^@^@^@[mT [38;5;81m^@^@^@^@^@^@[mT [38;5;81m^@^@^@^@^@^@[m4[38;5;81m^@^@^@^@^@^@^@[m4[38;5;81m^@^@^@^@^@^@^@^D^@^@^@^@^@^@^@[mQåtd[38;5;81m^F^@^@^@^@^@^@^@^@^@^^[11;1H@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^P^@^@^@^@^@^@^@[mRåtd[38;5;81m^D^@^@^@[m°[11;97H-[38;5;81m^@^@^@^@^@^@[m°[11;111H=[38;5;81m^@^@^@^@^@^@[m°[11;125H=[38;5;81m^@^@^@^^[12;1H@^@^@[mP[38;5;81m^B^@^@^@^@^@^@[mP[38;5;81m^B^@^@^@^@^@^@^A^@^@^@^@^@^@^@[m/lib64/ld-linux-x86-64.so.2[38;5;81m^@^@^@^@^@^D^@^@^@[m [38;5;81m^@^@^@^E^@^@^@[mGNU[38;5;81m^@^B^@^@[mÀ[38;5;81m^D^@^@^@^^[13;1HC^@^@^@^@^@^@^@^B<80>^@[mÀ[38;5;81m^D^@^@^@^A^@^@^@^@^@^@^@^D^@^@^@^T^@^@^@^C^@^@^@[mGNU[38;5;81m^@[m9ç[38;5;81m^^[mþ[13;83H[38;5;81m^E[mS]g[38;5;81m<94>[m`Ø[13;94HJ{[38;5;81m^U[mÉ[38;5;81m^M<83>[mÌ¡[13;107Hk[38;5;81m^D^@^@^@^P^@^@^@^A^@^@^@[mGG[14;1HNU[38;5;81m^@^@^@^@^@^C^@^@^@^B^@^@^@^@^@^@^@^@^@^@^@^B^@^@^@^G^@^@^@^A^@^@^@^F^@^@^@^@^@<81>^@^@^@^@^@^G^@^@^@^@^@^@^@[mÑeÎm[38;5;81m^@^@^@^@^@^@^@^@^@@[15;1H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^P^@^@^@^R^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[me[38;5;81m^@^@^@[m [38;5;81m^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[m[16;1H"[38;5;81m^@^@^@^R^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[m3[38;5;81m^@^@^@^R^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@<81>^@^@^@[m [38;5;81m^@^@^@^@^@^@^@^@^@^@^@^@^@^^[17;1H@^@^@^@^@^@<90>^@^@^@[m [38;5;81m^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@[m"[38;5;81m^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[m__cxa_finalize[38;5;81m^@[m__libc__[18;1Hstart_main[38;5;81m^@[m__stack_chk_fail[38;5;81m^@[mprintf[38;5;81m^@[mlibc.so.6[38;5;81m^@[mGLIBC_2.2.5[38;5;81m^@[mGLIBC_2.4[38;5;81m^@[mGLIBC_2.34[38;5;81m^@[m_ITM_deregisterTMCloneTable[38;5;81m^@[m__gmon_start__[38;5;81m^@[m_II[19;1HTM_registerTMCloneTable[38;5;81m^@^@^@^B^@^A^@^C^@^D^@^A^@^A^@^D^@^@^@^@^@^@^@^A^@^C^@[m:[38;5;81m^@^@^@^P^@^@^@^@^@^@^@[mu[38;5;81m^Z[mi[8C[38;5;81m^@^@^D^@[mD[38;5;81m^@^@^@^P^@^^[20;1H@^@^T[mii[38;5;81m^M^@^@^C^@[mP[38;5;81m^@^@^@^P^@^@^@[m´[20;34H[38;5;81m<91><96>^F^@^@^B^@[mZ[38;5;81m^@^@^@^@^@^@^@[m°[20;68H=[38;5;81m^@^@^@^@^@^@^H^@^@^@^@^@^@^@[m`[38;5;81m^Q^@^@^@^@^@^@[m¸[20;113H=[38;5;81m^@^@^@^@^@^@^H^@^@^^[21;1H@^@^@^@^@[m [38;5;81m^Q^@^@^@^@^@^@^H[m@[38;5;81m^@^@^@^@^@^@^H^@^@^@^@^@^@^@^H[m@[38;5;81m^@^@^@^@^@^@[mØ[21;72H?[38;5;81m^@^@^@^@^@^@^F^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@[mà[21;118H?[38;5;81m^@^@^@^@^@^@^FF[22;1H^@^@^@^B^@^@^@^@^@^@^@^@^@^@^@[mè[22;32H?[38;5;81m^@^@^@^@^@^@^F^@^@^@^E^@^@^@^@^@^@^@^@^@^@^@[mð[22;78H?[38;5;81m^@^@^@^@^@^@^F^@^@^@^F^@^@^@^@^@^@^@^@^@^@^@[mø[22;124H?[38;5;81m^@^@^@^@@[23;1H^@^@^F^@^@^@^G^@^@^@^@^@^@^@^@^@^@^@[mÈ?[38;5;81m^@^@^@^@^@^@^G^@^@^@^C^@^@^@^@^@^@^@^@^@^@^@[mÐ[23;84H?[38;5;81m^@^@^@^@^@^@^G^@^@^@^D^@^@^@^@^@^@^@^@^@^@^@^@^@@[24;1H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[25;1H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[26;1H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[27;1H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[28;1H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[29;1H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[30;1H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[31;1H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[32;1H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[33;1H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[34;1H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[35;1H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[36;1H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[37;1H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[38;1H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@[39;1H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[m[40;115H1,1[11CTop[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[40;1H[K[40;1H:[?25hwq[?25l[?2004l[>4;m"ex10" [converted] 8L, 18086B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ vim ex10.c
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;40r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[40;1H"ex10.c" 45L, 760B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[38;5;81m#include [m[95m<stdio.h>[m[2;1H[K[3;1H[38;5;121mint[m main([38;5;121mint[m argc, [38;5;121mchar[m *argv[])[3;33H[K[4;1H{
+    [38;5;121mint[m i = [95m0[m;[7;5H[96m/* Go through each string in argv.
+     * argv[0] is skipped because it is normally the program name.
+     */[m
+    [93mfor[m (i = [95m1[m; i < argc; i++)
+    {[12;9Hprintf([95m"arg [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m, i, argv[i]);
+    }[15;5H[96m/* Make our own array of strings. */[m
+    [38;5;121mchar[m *states[] = {[17;9H[95m"California"[m,[18;9H[95m"NewYork"[m,[19;9H[95m"Washington"[m,[20;9H[95m"Texas"[m
+    };[23;5H[93mif[m(argc > [95m1[m)
+    {[25;9H[38;5;121mchar[m *temp = states[[95m0[m];[26;9Hstates[[95m0[m] = argv[[95m1[m];[27;9Hargv[[95m1[m] = temp;
+    }[30;5H[38;5;121mint[m num_states = [95m4[m;[32;5H[93mfor[m (i = [95m0[m; i < num_states; i++)
+    {[34;13H[93mif[m(states[i] != [95mNULL[m)[35;13H{[36;17Hprintf([95m"state [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m,i,states[i]);[37;13H}[38;13H[93melse[m[39;13H{[40;115H1,1[11CTop[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[40;115H2,0-1[2;1H[?25h[?25l[40;115H3,1  [3;1H[?25h[?25l[40;115H4[4;1H[?25h[?25l[40;115H5[5;1H[?25h[?25l[40;115H6,0-1[6;1H[?25h[?25l[40;115H7,1  [7;1H[?25h[?25l[40;115H8[8;1H[?25h[?25l[40;115H9[9;1H[?25h[?25l[40;115H10,1[10;1H[?25h[?25l[40;116H1[11;1H[?25h[?25l[40;116H2[12;1H[?25h[?25l[40;116H3[13;1H[?25h[?25l[40;116H2[12;1H[?25h[?25l[40;116H1[11;1H[?25h[?25l[40;116H0[10;1H[?25h[?25l[40;1H[K[40;1H:[?25hwq[?25l[?2004l[>4;m"ex10.c" 45L, 760B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ vim ex10.c
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;40r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[40;1H"ex10.c" 45L, 760B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[38;5;81m#include [m[95m<stdio.h>[m[2;1H[K[3;1H[38;5;121mint[m main([38;5;121mint[m argc, [38;5;121mchar[m *argv[])[3;33H[K[4;1H{
+    [38;5;121mint[m i = [95m0[m;[7;5H[96m/* Go through each string in argv.
+     * argv[0] is skipped because it is normally the program name.
+     */[m
+    [93mfor[m (i = [95m1[m; i < argc; i++)
+    {[12;9Hprintf([95m"arg [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m, i, argv[i]);
+    }[15;5H[96m/* Make our own array of strings. */[m
+    [38;5;121mchar[m *states[] = {[17;9H[95m"California"[m,[18;9H[95m"NewYork"[m,[19;9H[95m"Washington"[m,[20;9H[95m"Texas"[m
+    };[23;5H[93mif[m(argc > [95m1[m)
+    {[25;9H[38;5;121mchar[m *temp = states[[95m0[m];[26;9Hstates[[95m0[m] = argv[[95m1[m];[27;9Hargv[[95m1[m] = temp;
+    }[30;5H[38;5;121mint[m num_states = [95m4[m;[32;5H[93mfor[m (i = [95m0[m; i < num_states; i++)
+    {[34;13H[93mif[m(states[i] != [95mNULL[m)[35;13H{[36;17Hprintf([95m"state [m[38;5;224m%d[m[95m: [m[38;5;224m%s\n[m[95m"[m,i,states[i]);[37;13H}[38;13H[93melse[m[39;13H{[40;115H1,1[11CTop[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[40;115H2,0-1[2;1H[?25h[?25l[40;115H3,1  [3;1H[?25h[?25l[40;115H4[4;1H[?25h[?25l[40;115H5[5;1H[?25h[?25l[40;115H6,0-1[6;1H[?25h[?25l[40;115H7,1  [7;1H[?25h[?25l[40;115H8[8;1H[?25h[?25l[40;115H9[9;1H[?25h[?25l[40;115H10,1[10;1H[?25h[?25l[40;116H1[11;1H[?25h[?25l[40;116H2[12;1H[?25h[?25l[40;116H3[13;1H[?25h[?25l[40;116H4,0-1[14;1H[?25h[?25l[40;116H5,1  [15;1H[?25h[?25l[40;116H6[16;1H[?25h[?25l[40;116H7[17;1H[?25h[?25l[40;116H8[18;1H[?25h[?25l[40;116H9[19;1H[?25h[?25l[40;115H20[20;1H[?25h[?25l[40;116H1[21;1H[?25h[?25l[40;116H2,0-1[22;1H[?25h[?25l[40;116H3,1  [23;1H[?25h[?25l[40;116H4[24;1H[?25h[?25l[40;116H5,1-8[25;8H[?25h[?25l[40;116H6,1  [26;1H[?25h[?25l[40;116H7,1-8[27;8H[?25h[?25l[40;116H8,1  [28;1H[?25h[?25l[40;116H9,0-1[29;1H[?25h[?25l[40;115H30,1  [30;1H[?25h[?25l[40;116H1,0-1[31;1H[?25h[?25l[40;116H2,1  [32;1H[?25h[?25l[40;116H3[33;1H[?25h[?25l[40;116H2[32;1H[?25h[?25l[40;116H1,0-1[31;1H[?25h[?25l[40;116H0,1  [30;1H[?25h[?25l[40;115H29,0-1[29;1H[?25h[?25l[40;116H8,1  [28;1H[?25h[?25l[40;116H7,1-8[27;8H[?25h[?25l[40;116H6,1  [26;1H[?25h[?25l[40;116H5,1-8[25;8H[?25h[?25l[40;116H6,1  [26;1H[?25h[?25l[40;116H7,1-8[27;8H[?25h[?25l[40;116H8,1  [28;1H[?25h[?25l[40;116H9,0-1[29;1H[?25h[?25l[40;116H8,1  [28;1H[?25h[?25l[40;116H7,1-8[27;8H[?25h[?25l[40;116H6,1  [26;1H[?25h[?25l[40;116H5,1-8[25;8H[?25h[?25l[24;5H[46m{[28;5H}[m[40;116H4,5  [24;5H[?25h[?25l{[28;5H}[40;116H5,1-8[25;8H[?25h[?25l[40;116H6,5[26;8H[?25h[?25l[40;116H7,1[27;8H[?25h[?25l[24;5H[46m{[28;5H}[m[40;116H8,5  [28;5H[?25h[?25l[24;5H{[28;5H}[40;116H9,0-1[29;1H[?25h[?25l[40;115H30,5  [30;5H[?25h[?25l[40;116H1,0-1[31;1H[?25h[?25l[40;116H2,5  [32;5H[?25h[?25l[40;116H1,0-1[31;1H[?25h[?25l[40;116H0,5  [30;5H[?25h[?25l[40;115H29,0-1[29;1H[?25h[?25l[24;5H[46m{[28;5H}[m[40;116H8,5  [28;5H[?25h[?25l[24;5H{[28;5H}[40;118H4[28;4H[?25h[?25l[40;118H3[28;3H[?25h[?25l[40;118H2[28;2H[?25h[?25l[40;118H1[28;1H[?25h[?25l[40;1H[1m-- INSERT --[m[40;13H[K[40;115H28,6[10CTop[24;5H[46m{[28;5H}[?25h[?25l[m[28;5H[K[24;5H{[40;118H5[28;5H[?25h[?25l[40;118H4[28;4H[?25h[?25l[40;118H3[28;3H[?25h[?25l[40;118H2[28;2H[?25h[?25l[40;118H1[28;1H[?25h[?25l[27;39r[39;1H
+[1;40r[27;9Hargv[[95m1[m] = temp;[39;17Hprintf([95m"state [m[38;5;224m%d[m[95m: (null)[m[38;5;224m\n[m[95m"[m,i);[40;115H[K[40;115H27,17-24      Top[27;24H[?25h[?25l[27;23H[K[40;119H6-23[27;23H[?25h[?25l[27;22H[K[40;119H5-22[27;22H[?25h[?25l[27;21H[K[40;119H4-21[27;21H[?25h[?25l[27;20H[K[40;119H3-20[27;20H[?25h[?25l[27;19H[K[40;119H2-19[27;19H[?25h[?25l[40;119H1-18[27;18H[?25h[?25l[27;17H[K[40;119H0-17[27;17H[?25h[?25l[46m[[1C][m[40;118H9-16 [27;16H[?25h[?25l[27;15H[K[29;23H[97m[101m;[32;5H{[34;13H{[35;53H;[36;13H}[38;13H{[39;47H;[m[27;13H[[40;118H8-15[27;15H[?25h[?25l[27;14H[K[40;118H7-14[27;14H[?25h[?25l[27;13H[K[29;23H;[32;5H{[34;13H{[35;53H;[36;13H}[38;13H{[39;47H;[40;118H6-13[27;13H[?25h[?25l[27;12H[K[40;118H5-12[27;12H[?25h[?25l[27;11H[K[40;118H4-11[27;11H[?25h[?25l[27;10H[K[40;118H3-10[27;10H[?25h[?25l[27;9H[K[40;118H2-9 [27;9H[?25h[?25l[40;118H1  [27;1H[?25h[?25l[26;39r[39;1H
+[1;40r[26;9Hstates[[95m0[m] = argv[[95m1[m];[39;13H}[40;115H[K[40;115H26,26-29      Top[26;29H[?25h[?25l[26;28H[K[26;25H[46m[[1C][m[40;119H5-28[26;28H[?25h[?25l[26;27H[K[28;23H[97m[101m;[31;5H{[33;13H{[34;53H;[35;13H}[37;13H{[38;47H;[39;13H}[m[26;25H[[40;119H4-27[26;27H[?25h[?25l[26;26H[K[40;119H3-26[26;26H[?25h[?25l[26;25H[K[28;23H;[31;5H{[33;13H{[34;53H;[35;13H}[37;13H{[38;47H;[39;13H}[40;119H2-25[26;25H[?25h[?25l[26;24H[K[40;119H1-24[26;24H[?25h[?25l[26;23H[K[40;119H0-23[26;23H[?25h[?25l[26;22H[K[40;118H19-22[26;22H[?25h[?25l[26;21H[K[40;119H8-21[26;21H[?25h[?25l[40;119H7-20[26;20H[?25h[?25l[26;19H[K[40;119H6-19[26;19H[?25h[?25l[46m[[1C][m[40;119H5-18[26;18H[?25h[?25l[26;17H[K[28;23H[97m[101m;[31;5H{[33;13H{[34;53H;[35;13H}[37;13H{[38;47H;[39;13H}[m[26;15H[[40;119H4-17[26;17H[?25h[?25l[26;16H[K[40;119H3-16[26;16H[?25h[?25l[26;15H[K[28;23H;[31;5H{[33;13H{[34;53H;[35;13H}[37;13H{[38;47H;[39;13H}[40;119H2-15[26;15H[?25h[?25l[26;14H[K[40;119H1-14[26;14H[?25h[?25l[26;13H[K[40;119H0-13[26;13H[?25h[?25l[26;12H[K[40;118H9-12 [26;12H[?25h[?25l[26;11H[K[40;118H8-11[26;11H[?25h[?25l[26;10H[K[40;118H7-10[26;10H[?25h[?25l[26;9H[K[40;118H6-9 [26;9H[?25h[?25l[40;118H5  [26;5H[?25h[?25l[40;118H4[26;4H[?25h[?25l[40;118H3[26;3H[?25h[?25l[40;118H2[26;2H[?25h[?25l[40;118H1[26;1H[?25h[?25l[25;39r[39;1H
+[1;40r[25;9H[38;5;121mchar[m *temp = states[[95m0[m];[39;5H}[40;115H[K[40;115H25,25-32      Top[25;32H[?25h[?25l[25;31H[K[25;28H[46m[[1C][m[40;119H4-31[25;31H[?25h[?25l[25;30H[K[27;23H[97m[101m;[30;5H{[32;13H{[33;53H;[34;13H}[36;13H{[37;47H;[38;13H}[m[25;28H[[40;119H3-30[25;30H[?25h[?25l[25;29H[K[40;119H2-29[25;29H[?25h[?25l[25;28H[K[27;23H;[30;5H{[32;13H{[33;53H;[34;13H}[36;13H{[37;47H;[38;13H}[40;119H1-28[25;28H[?25h[?25l[25;27H[K[40;119H0-27[25;27H[?25h[?25l[25;26H[K[40;118H19-26[25;26H[?25h[?25l[25;25H[K[40;119H8-25[25;25H[?25h[?25l[25;24H[K[40;119H7-24[25;24H[?25h[?25l[25;23H[K[40;119H6-23[25;23H[?25h[?25l[25;22H[K[40;119H5-22[25;22H[?25h[?25l[40;119H4-21[25;21H[?25h[?25l[25;20H[K[40;119H3-20[25;20H[?25h[?25l[40;119H2-19[25;19H[?25h[?25l[25;18H[K[40;119H1-18[25;18H[?25h[?25l[25;17H[K[40;119H0-17[25;17H[?25h[?25l[25;16H[K[40;118H9-16 [25;16H[?25h[?25l[25;15H[K[40;118H8-15[25;15H[?25h[?25l[25;14H[K[40;118H7-14[25;14H[?25h[?25l[40;118H6-13[25;13H[?25h[?25lcha[25;12H[K[40;118H5-12[25;12H[?25h[?25l[25;11H[K[40;118H4-11[25;11H[?25h[?25l[25;10H[K[40;118H3-10[25;10H[?25h[?25l[25;9H[K[40;118H2-9 [25;9H[?25h[?25l[40;118H1  [25;1H[?25h[?25l[24;39r[39;1H
+[1;40r[24;5H{[40;115H[K[40;115H24,6[10CTop[24;6H[?25h[?25l[24;5H[K[40;118H5[24;5H[?25h[?25l[40;118H4[24;4H[?25h[?25l[40;118H3[24;3H[?25h[?25l[40;118H2[24;2H[?25h[?25l[40;118H1[24;1H[?25h[?25l[23;39r[39;1H
+[1;40r[23;5H[93mif[m(argc > [95m1[m)[39;5H[93mreturn[m [95m0[m;[40;115H[K[40;115H23,17[9CTop[23;7H[46m([8C)[?25h[?25l[m[23;16H[K[28;5H[97m[101m{[30;13H{[32;13H}[34;13H{[36;13H}[m[23;7H([40;119H6[23;16H[?25h[?25l[23;15H[K[40;119H5[23;15H[?25h[?25l[40;119H4[23;14H[?25h[?25l[23;13H[K[40;119H3[23;13H[?25h[?25l[40;119H2[23;12H[?25h[?25l[23;11H[K[40;119H1[23;11H[?25h[?25l[23;10H[K[40;119H0[23;10H[?25h[?25l[23;9H[K[40;118H9 [23;9H[?25h[?25l[23;8H[K[40;118H8[23;8H[?25h[?25l[23;7H[K[28;5H{[30;13H{[32;13H}[34;13H{[36;13H}[40;118H7[23;7H[?25h[?25li[23;6H[K[40;118H6[23;6H[?25h[?25l[23;5H[K[40;118H5[23;5H[?25h[?25l[40;118H4[23;4H[?25h[?25l[40;118H3[23;3H[?25h[?25l[40;118H2[23;2H[?25h[?25l[40;118H1[23;1H[?25h[?25l[22;39r[39;1H
+[1;40r[39;1H}[40;115H[K[40;115H22,1[10CAll[22;1H[?25h[?25l[21;39r[39;1H
+[1;40r[21;5H};[39;1H[94m~                                                                                                                                   [m[40;115H[K[40;115H21,7[10CAll[21;7H[?25h[40;1H[K[21;6H[?25l[40;115H21,6[10CAll[21;6H[?25h[?25l[40;115H[K[40;1H:[?25hwq[?25l[?2004l[>4;m"ex10.c" 38L, 662B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ [7mmake clean[27m
+[7mmake ex10 2>&1 | tee logs/build-final.log[27m[A]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ make clean
+make ex10 2>&1 | tee logs/build-final.log
+[?2004lrm -f ex10
+cc -Wall -Wextra -g    ex10.c   -o ex10
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ [7m./ex10 apple banana | tee logs/run-final.log[27m./ex10 apple banana | tee logs/run-final.log
+[?2004larg 1: apple
+arg 2: banana
+state 0: California
+state 1: NewYork
+state 2: Washington
+state 3: Texas
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ [7mvalgrind --track-origins=yes ./ex10 apple banana \[27m
+[7m    2>&1 | tee logs/valgrind-final.log[27m[A]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ valgrind --track-origins=yes ./ex10 apple banana \
+    2>&1 | tee logs/valgrind-final.log
+[?2004l==42539== Memcheck, a memory error detector
+==42539== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==42539== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==42539== Command: ./ex10 apple banana
+==42539== 
+arg 1: apple
+arg 2: banana
+state 0: California
+state 1: NewYork
+state 2: Washington
+state 3: Texas
+==42539== 
+==42539== HEAP SUMMARY:
+==42539==     in use at exit: 0 bytes in 0 blocks
+==42539==   total heap usage: 1 allocs, 1 frees, 4,096 bytes allocated
+==42539== 
+==42539== All heap blocks were freed -- no leaks are possible
+==42539== 
+==42539== For lists of detected and suppressed errors, rerun with: -s
+==42539== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ [7mgrep "ERROR SUMMARY" logs/valgrind-final.log[27mgrep "ERROR SUMMARY" logs/valgrind-final.log
+[?2004l==42539== [01;31m[KERROR SUMMARY[m[K: 0 errors from 0 contexts (suppressed: 0 from 0)
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ [7mvim README.md[27mvim README.md
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;40r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[40;1H"README.md" [New][2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                                                   [3;1H~                                                                                                                                   [4;1H~                                                                                                                                   [5;1H~                                                                                                                                   [6;1H~                                                                                                                                   [7;1H~                                                                                                                                   [8;1H~                                                                                                                                   [9;1H~                                                                                                                                   [10;1H~                                                                                                                                   [11;1H~                                                                                                                                   [12;1H~                                                                                                                                   [13;1H~                                                                                                                                   [14;1H~                                                                                                                                   [15;1H~                                                                                                                                   [16;1H~                                                                                                                                   [17;1H~                                                                                                                                   [18;1H~                                                                                                                                   [19;1H~                                                                                                                                   [20;1H~                                                                                                                                   [21;1H~                                                                                                                                   [22;1H~                                                                                                                                   [23;1H~                                                                                                                                   [24;1H~                                                                                                                                   [25;1H~                                                                                                                                   [26;1H~                                                                                                                                   [27;1H~                                                                                                                                   [28;1H~                                                                                                                                   [29;1H~                                                                                                                                   [30;1H~                                                                                                                                   [31;1H~                                                                                                                                   [32;1H~                                                                                                                                   [33;1H~                                                                                                                                   [34;1H~                                                                                                                                   [35;1H~                                                                                                                                   [36;1H~                                                                                                                                   [37;1H~                                                                                                                                   [38;1H~                                                                                                                                   [39;1H~                                                                                                                                   [m[40;115H0,0-1[9CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P$q q\[?12$p[?25l[40;1H[1m-- INSERT --[m[40;13H[K[40;115H0,1[11CAll[1;1H[?25h[?25l[38;5;224m#[m[38;5;225m Exercise 10: Arrays of Strings, Looping[m[2;1H[K[3;1H[38;5;224m##[m[38;5;225m 学习目[m[3;10H[K[3;10H[?25h[?25l[38;5;225m标[m[4;1H[K[5;1H[93m-[m 理解argc和argv[5;17H[K[6;1H[93m-[m 学习for循环[6;14H[K[7;1H[93m-[m 理解字符串数[7;15H[K[7;15H[?25h[?25l组
+[93m-[m 观察数组元素数量错误导致的越界[8;33H[K[9;1H[93m-[m 学习NULL[9;11H[K[9;11H[?25h[?25l和指针赋值[10;1H[K[11;1H[38;5;224m##[m[38;5;225m argc和argv[m[11;14H[K[12;1H[K[13;1Hmain函数：[13;11H[K[14;1H[K[15;1H    int main(in[15;16H[K[15;16H[?25h[?25lt argc, char *argv[])[16;1H[K[17;1H[38;5;224m`[margc[38;5;224m`[m表示命令行参数数量，[38;5;224m`[mar[17;30H[K[17;30H[?25h[?25lgv[38;5;224m`[m是参数字符串数组。[18;1H[K[19;1H执行：[19;7H[K[20;1H[K[21;1H    ./ex10 one two[21;19H[K[22;1H[K[22;1H[?25h[?25l
+通常得到：[23;11H[K[24;1H[K[25;1H    argc = 3[25;13H[K[26;1H    argv[0] = "./ex10"[26;23H[K[27;1H    argv[27;9H[K[27;9H[?25h[?25l[1] = "one"
+    argv[2] = "two"[28;20H[K[29;1H[K[30;1H程序名本身也计算在[30;19H[K[30;19H[?25h[?25l参数数量中。[31;1H[K[32;1H[38;5;224m##[m[38;5;225m for循环[m[32;11H[K[33;1H[K[34;1H基本结构：[34;11H[K[35;1H[K[36;1H    for (初[36;12H[K[36;12H[?25h[?25l始化; 条件; 更新)
+    {[37;6H[K[38;1H        循环体;[38;16H[K[39;1H    }[39;6H[K[1;39r[1;1H[2M[1;40r[39;1H执行[40;11H[1m(paste) --[m[40;115H[K[39;5H[?25h[?25l顺序： [?25h[?25l[1;39r[1;1H[4M[1;40r[37;1H[93m1.[m 执行初始化
+[93m2.[m 判断条件
+[93m3.[m 条件为真时执行循环体[39;6H[?25h[?25l[1;39r[1;1H[4M[1;40r[36;1H[93m4.[m 执行更新
+[93m5.[m 返回条件判断
+
+[38;5;224m##[m[38;5;225m 从1开始遍历argv[39;10H[?25h[?25l[1;39r[m[1;1H[4M[1;40r[37;5Hfor (i = 1; i < argc; i++)
+
+跳过了[38;5;224m`[margv[0][38;5;224m`[m，因为它通常是程序名称。[39;12H[?25h[?25l[1;39r[1;1H[2M[1;40r[39;1H从0开始也是合法的，只是会同时输出程序名。[39;12H[?25h[?25l[1;39r[1;1H[2M[1;40r[39;1H[38;5;224m##[m[38;5;225m 字符串数组[?25h[?25l[1;39r[m[1;1H[4M[1;40r[37;5Hchar *states[] = {[38;9H"California",[39;9H"Oregon",[39;9H[?25h[?25l[1;39r[1;1H[5M[1;40r[35;9H"Washington",[36;9H"Texas"
+    };
+
+[38;5;224m`[mstates[38;5;224m`[m是一个指针数组，每个元素都指向一个C字符串[?25h[?25l。[39;17H[?25h[?25l[1;39r[1;1H[6M[1;40r[35;5Hstates[0]
+
+是第一个字符串。[39;5Hstates[0][0][39;10H[?25h[?25l[1;39r[1;1H[4M[1;40r[37;1H是第一个字符串的第一个字符。
+
+[38;5;224m##[m[38;5;225m 数组越界实验[22C[?25h[?25l[1;39r[m[1;1H[2M[1;40r[39;1H将[38;5;224m`[mnum_states[38;5;224m`[m从4改为10后，循环会访问不存在的元素。[39;29H[?25h[?25l[1;39r[1;1H[2M[1;40r[39;1H在64位系统中，Valgrind可能报告：[39;17H[?25h[?25l[1;39r[1;1H[4M[1;40r[37;5HInvalid read of size 8
+
+因为字符串数组的每个元素通常是一个8字节指针。[39;13H[?25h[?25l[1;39r[1;1H[2M[1;40r[39;1H垃圾指针被传给[38;5;224m`[m%s[38;5;224m`[m后，还可能产生：[?25h[?25l[1;39r[1;1H[3M[1;40r[38;5HInvalid read of size 1
+    Segmentation fault[39;11H[?25h[?25l[1;39r[1;1H[4M[1;40r[37;1H[38;5;224m##[m[38;5;225m for中的逗号[m
+
+可以在初始化和更新区域使用逗号执行多个表达式：[39;8H[?25h[?25l[1;39r[1;1H[2M[1;40r[39;5Hfor (i = 0, j = 10; i < j; i++, j--)[39;17H[?25h[?25l[1;39r[1;1H[2M[1;40r[39;1H三个主要区域仍然使用分号分隔。[39;23H[?25h[?25l[1;39r[1;1H[4M[1;40r[37;1H[38;5;224m##[m[38;5;225m NULL[m
+
+[38;5;224m`[mNULL[38;5;224m`[m表示空指针，不指向有效对象。[?25h[?25l[1;39r[1;1H[2M[1;40r[39;1H将[38;5;224m`[mNULL[38;5;224m`[m直接传给[38;5;224m`[m%s[38;5;224m`[m属于未定义行为。某些系统可能输出[38;5;224m`[m(null)[38;5;224m`[m，另一些系统可[?25h[?25l能崩溃。[39;21H[?25h[?25l[1;39r[1;1H[4M[1;40r[37;1H安全使用前应检查：[39;5Hif (states[i] != NULL)[?25h[?25l[1;39r[1;1H[6M[1;40r[35;1H[38;5;224m##[m[38;5;225m states和argv赋值[m[37;5Hstates[0] = argv[1];
+
+只改变指针指向，不复制字符串内容。[39;7H[?25h[?25l[1;39r[1;1H[2M[1;40r[39;1H反过来：[?25h[?25l[1;39r[1;1H[6M[1;40r[35;5Hargv[1] = states[0];
+
+也是指针赋值。
+
+访问[38;5;224m`[margv[1][38;5;224m`[m前必须先确认：[39;12H[?25h[?25l[1;39r[1;1H[4M[1;40r[37;5Hargc > 1
+
+[38;5;224m##[m[38;5;225m 参数数量[31C[?25h[?25l[1;39r[m[1;1H[2M[1;40r[39;1H只要循环条件使用[38;5;224m`[mi < argc[38;5;224m`[m，传入大量参数通常不会造成数组越界。[39;22H[?25h[?25l[1;39r[1;1H[2M[1;40r[39;1H操作系统会准确设置[38;5;224m`[margc[38;5;224m`[m，并且命令行总长度还受[38;5;224m`[mARG_MAX[38;5;224m`[m限制。[39;5H[?25h[?25l[1;39r[1;1H[2M[1;40r[39;1H[38;5;224m##[m[38;5;225m Valgrind结果[?25h[?25l[1;39r[m[1;1H[4M[1;40r[37;1H最终正确版本应显示：[39;5HERROR SUMMARY: 0 errors from 0 contexts[39;9H[?25h[?25l[1;39r[1;1H[4M[1;40r[37;1H[38;5;224m##[m[38;5;225m 本题总结[m
+
+[38;5;224m`[margv[38;5;224m`[m本身就是一个字符串数组。[39;20H[?25h[?25l[1;39r[1;1H[2M[1;40r[39;1Hfor循环通过初始化、条件判断和更新重复执行代码。[39;11H[?25h[?25l[1;39r[1;1H[2M[1;40r[39;1H遍历数组时必须保证循环上限与真实元素数量一致。[40;11H[1m--a[m[40;13H[K[40;115H143,70-47     Bot[39;47H[?25h[40;1H[K[39;45H[?25l[40;115H143,67-45     Bot[39;45H[?25h[?25l[40;117H2,0-1  [38;1H[?25h[?25l[40;117H1,64-44[37;44H[?25h[?25l[40;117H0,0-1  [36;1H[?25h[?25l[40;116H39,40-29[35;29H[?25h[?25l[40;117H8,0-1  [34;1H[?25h[?25l[40;117H7,13-10[33;10H[?25h[?25l[40;117H6,0-1  [32;1H[?25h[?25l[40;117H5,43 [31;43H[?25h[?25l[40;117H4,0-1[30;1H[?25h[?25l[40;117H3,28-19[29;19H[?25h[?25l[40;117H2,0-1  [28;1H[?25h[?25l[40;117H1,15-14[27;14H[?25h[?25l[40;117H0,0-1  [26;1H[?25h[?25l[40;116H29,64-45[25;45H[?25h[?25l[40;117H8,0-1  [24;1H[?25h[?25l[40;117H7,62-45[23;45H[?25h[?25l[40;117H6,0-1  [22;1H[?25h[?25l[40;117H5,13-10[21;10H[?25h[?25l[40;117H4,0-1  [20;1H[?25h[?25l[40;117H3,12 [19;12H[?25h[?25l[40;117H2,0-1[18;1H[?25h[?25l[40;117H1,34-26[17;26H[?25h[?25l[40;117H0,0-1  [16;1H[?25h[?25l[40;116H19,19-13[15;13H[?25h[?25l[40;117H8,0-1  [14;1H[?25h[?25l[40;117H7,24 [13;24H[?25h[?25l[40;117H6,0-1[12;1H[?25h[?25l[40;117H5,10-7[11;7H[?25h[?25l[40;117H4,0-1 [10;1H[?25h[?25l[40;117H3,49-33[9;33H[?25h[?25l[40;117H2,0-1  [8;1H[?25h[?25l[40;117H1,24 [7;24H[?25h[?25l[40;117H0,0-1[6;1H[?25h[?25l[40;116H09,20-18[5;18H[?25h[?25l[40;117H8,0-1  [4;1H[?25h[?25l[3;8H[46m([17C)[m[40;117H7,26 [3;26H[?25h[?25l[3;8H([17C)[40;117H6,0-1[2;1H[?25h[?25l[40;117H5,25-17[1;17H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H104,0-1[7C99%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H将[38;5;224m`[mNULL[38;5;224m`[m直接传给[38;5;224m`[m%s[38;5;224m`[m属于未定义行为。某些系统可能输出[38;5;224m`[m(null)[38;5;224m`[m，另一些系统可能崩溃。[40;115H[K[40;115H103,62-45     98%[1;45H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H102,0-1[7C97%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[38;5;224m`[mNULL[38;5;224m`[m表示空指针，不指向有效对象。[40;115H[K[40;115H101,46-33     96%[1;33H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H100,0-1[7C95%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[38;5;224m##[m[38;5;225m NULL[m[40;115H[K[40;115H99,7[10C94%[1;7H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H98,0-1[8C93%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H三个主要区域仍然使用分号分隔。[40;115H[K[40;115H97,43-29      92%[1;29H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H96,0-1[8C91%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;5Hfor [46m([mi = 0, j = 10; i < j; i++, j--[46m)[m[40;115H[K[40;115H95,40[9C90%[1;40H[?25h[?25l[1;39r[1;1H[L[1;40r[2;9H([30C)[40;115H[K[40;115H94,0-1[8C89%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H可以在初始化和更新区域使用逗号执行多个表达式：[40;115H[K[40;115H93,67-45      88%[1;45H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H92,0-1[8C87%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[38;5;224m##[m[38;5;225m for中的逗号[m[40;115H[K[40;115H91,16-13      86%[1;13H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H90,0-1[8C85%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;5HSegmentation fault[40;115H[K[40;115H89,22[9C84%[1;22H[?25h[?25l[1;39r[1;1H[L[1;40r[1;5HInvalid read of size 1[40;115H[K[40;115H88,26[9C83%[1;26H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H87,0-1[8C82%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H垃圾指针被传给[38;5;224m`[m%s[38;5;224m`[m后，还可能产生：[40;115H[K[40;115H86,47-33      81%[1;33H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H85,0-1[8C80%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H因为字符串数组的每个元素通常是一个8字节指针。[40;115H[K[40;115H84,65-44      79%[1;44H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H83,0-1[8C78%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;5HInvalid read of size 8[40;115H[K[40;115H82,26[9C77%[1;26H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H81,0-1[8C76%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H在64位系统中，Valgrind可能报告：[40;115H[K[40;115H80,41-31      75%[1;31H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H79,0-1[8C75%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H将[38;5;224m`[mnum_states[38;5;224m`[m从4改为10后，循环会访问不存在的元素。[40;115H[K[40;115H78,58-44      74%[1;44H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H77,0-1[8C73%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[38;5;224m##[m[38;5;225m 数组越界实验[m[40;115H[K[40;115H76,19-14      72%[1;14H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H75,0-1[8C71%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H是第一个字符串的第一个字符。[40;115H[K[40;115H74,40-27      70%[1;27H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H73,0-1[8C69%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;5Hstates[0][46m[[m0[46m][m[40;115H[K[40;115H72,16[9C68%[1;16H[?25h[?25l[1;39r[1;1H[L[1;40r[2;14H[0][40;115H[K[40;115H71,0-1[8C67%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H是第一个字符串。[40;115H[K[40;115H70,22-15      66%[1;15H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H69,0-1[8C65%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;5Hstates[46m[[m0[46m][m[40;115H[K[40;115H68,13[9C64%[1;13H[?25h[?25l[1;39r[1;1H[L[1;40r[2;11H[0][40;115H[K[40;115H67,0-1[8C63%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[38;5;224m`[mstates[38;5;224m`[m是一个指针数组，每个元素都指向一个C字符串。[40;115H[K[40;115H66,61-44      62%[1;44H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H65,0-1[8C61%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;5H};[40;115H[K[40;115H64,6[10C60%[1;6H[?25h[?25l[1;39r[1;1H[L[1;40r[1;9H"Texas"[40;115H[K[40;115H63,15[9C59%[1;15H[?25h[?25l[1;39r[1;1H[L[1;40r[1;9H"Washington",[40;115H[K[40;115H62,21[9C58%[1;21H[?25h[?25l[1;39r[1;1H[L[1;40r[1;9H"Oregon",[40;115H[K[40;115H61,17[9C57%[1;17H[?25h[?25l[1;39r[1;1H[L[1;40r[1;9H"California",[40;115H[K[40;115H60,21[9C56%[1;21H[?25h[?25l[6;39r[6;1H[L[1;40r[1;5Hchar *states[] = [46m{[m[2;10HCalifornia",[3;10HOregon",[3;18H[K[4;10HWashington",
+        "Texas"
+    [46m}[m;[40;115H[K[40;115H59,22[9C55%[1;22H[?25h[?25l[1;39r[1;1H[L[1;40r[2;22H{[7;5H}[40;115H[K[40;115H58,0-1[8C54%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[38;5;224m##[m[38;5;225m 字符串数组[m[40;115H[K[40;115H57,16-12      53%[1;12H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H56,0-1[8C52%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H从0开始也是合法的，只是会同时输出程序名。[40;115H[K[40;115H55,59-40      51%[1;40H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H54,0-1[8C50%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H跳过了[38;5;224m`[margv[0][38;5;224m`[m，因为它通常是程序名称。[40;115H[K[40;115H53,52-38      50%[1;38H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H52,0-1[8C49%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;5Hfor [46m([mi = 1; i < argc; i++[46m)[m[40;115H[K[40;115H51,30[9C48%[1;30H[?25h[?25l[1;39r[1;1H[L[1;40r[2;9H([20C)[40;115H[K[40;115H50,0-1[8C47%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[38;5;224m##[m[38;5;225m 从1开始遍历argv[m[40;115H[K[40;115H49,23-18      46%[1;18H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H48,0-1[8C45%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[93m5.[m 返回条件判断[40;115H[K[40;115H47,19-14      44%[1;14H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[93m4.[m 执行更新[40;115H[K[40;115H46,13-10      43%[1;10H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[93m3.[m 条件为真时执行循环体[40;115H[K[40;115H45,31-22      42%[1;22H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[93m2.[m 判断条件[40;115H[K[40;115H44,13-10      41%[1;10H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[93m1.[m 执行初始化[40;115H[K[40;115H43,16-12      40%[1;12H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H42,0-1[8C39%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H执行顺序：[40;115H[K[40;115H41,13-9[7C38%[1;9H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H40,0-1[8C37%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;5H}[40;115H[K[40;115H39,5[10C36%[1;5H[?25h[?25l[1;39r[1;1H[L[1;40r[1;9H循环体;[40;115H[K[40;115H38,18-15      35%[1;15H[?25h[?25l[3;39r[3;1H[L[1;40r[1;5H[46m{[m[1;9H[K[2;5H    循环体;
+    [46m}[m[40;115H[K[40;115H37,5[10C34%[1;5H[?25h[?25l[4;39r[4;1H[L[1;40r[1;5Hfor [46m([m初始化; 条件; 更新[46m)[m
+    {[2;9H[K[3;5H    循环体;
+    }[40;115H[K[40;115H36,35-28      33%[1;28H[?25h[?25l[1;39r[1;1H[L[1;40r[2;9H([18C)[40;115H[K[40;115H35,0-1[8C32%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H基本结构：[40;115H[K[40;115H34,13-9[7C31%[1;9H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H33,0-1[8C30%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[38;5;224m##[m[38;5;225m for循环[m[40;115H[K[40;115H32,10-9[7C29%[1;9H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H31,0-1[8C28%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H程序名本身也计算在参数数量中。[40;115H[K[40;115H30,43-29      27%[1;29H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H29,0-1[8C26%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;5Hargv[2] = "two"[40;115H[K[40;115H28,19[9C25%[1;19H[?25h[?25l[1;39r[1;1H[L[1;40r[1;5Hargv[1] = "one"[40;115H[K[40;115H27,19[9C25%[1;19H[?25h[?25l[1;39r[1;1H[L[1;40r[1;5Hargv[0] = "./ex10"[40;115H[K[40;115H26,22[9C24%[1;22H[?25h[?25l[1;39r[1;1H[L[1;40r[1;5Hargc = 3[40;115H[K[40;115H25,12[9C23%[1;12H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H24,0-1[8C22%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H通常得到：[40;115H[K[40;115H23,13-9[7C21%[1;9H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H22,0-1[8C20%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;5H./ex10 one two[40;115H[K[40;115H21,18[9C19%[1;18H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H20,0-1[8C18%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H执行：[40;115H[K[40;115H19,7-5[8C17%[1;5H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H18,0-1[8C16%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[38;5;224m`[margc[38;5;224m`[m表示命令行参数数量，[38;5;224m`[margv[38;5;224m`[m是参数字符串数组。[40;115H[K[40;115H17,61-45      15%[1;45H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H16,0-1[8C14%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;5Hint main[46m([mint argc, char *argv[][46m)[m[40;115H[K[40;115H15,36[9C13%[1;36H[?25h[?25l[1;39r[1;1H[L[1;40r[2;13H([22C)[40;115H[K[40;115H14,0-1[8C12%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1Hmain函数：[40;115H[K[40;115H13,11-9[7C11%[1;9H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H12,0-1[8C10%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[38;5;224m##[m[38;5;225m argc和argv[m[40;115H[K[40;115H11,14-13[7C9%[1;13H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H10,0-1[9C8%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[93m-[m 学习NULL和指针赋值[40;115H[K[40;115H9,25-19[8C7%[1;19H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[93m-[m 观察数组元素数量错误导致的越界[40;115H[K[40;115H8,45-31[8C6%[1;31H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[93m-[m 理解字符串数组[40;115H[K[40;115H7,21-15[8C5%[1;15H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[93m-[m 学习for循环[40;115H[K[40;115H6,15-12[8C4%[1;12H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[93m-[m 理解argc和argv[40;115H[K[40;115H5,19-16[8C3%[1;16H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H4,0-1[10C2%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[38;5;224m##[m[38;5;225m 学习目标[m[40;115H[K[40;115H3,13-10[8C1%[1;10H[?25h[?25l[1;39r[1;1H[L[1;40r[40;115H[K[40;115H2,0-1[10C0%[1;1H[?25h[?25l[1;39r[1;1H[L[1;40r[1;1H[38;5;224m#[m[38;5;225m Exercise 10: Arrays of Strings, Looping[m[40;115H[K[40;115H1,41[10CTop[1;41H[?25h[?25l[40;115H2,0-1[2;1H[?25h[?25l[40;115H3,13-10[3;10H[?25h[?25l[40;115H4,0-1  [4;1H[?25h[?25l[40;115H5,19-16[5;16H[?25h[?25l[40;115H6,15-12[6;12H[?25h[?25l[40;115H7,21-15[7;15H[?25h[?25l[40;115H8,45-31[8;31H[?25h[?25l[40;115H9,25-19[9;19H[?25h[?25l[40;115H10,0-1 [10;1H[?25h[?25l[40;116H1,14-13[11;13H[?25h[?25l[40;116H2,0-1  [12;1H[?25h[?25l[40;116H3,11-9[13;9H[?25h[?25l[40;116H4,0-1 [14;1H[?25h[?25l[15;13H[46m([22C)[m[40;116H5,36 [15;36H[?25h[?25l[15;13H([22C)[40;116H6,0-1[16;1H[?25h[?25l[40;116H7,61-45[17;45H[?25h[?25l[40;116H8,0-1  [18;1H[?25h[?25l[40;116H9,7-5[19;5H[?25h[?25l[40;115H20,0-1[20;1H[?25h[?25l[40;116H1,18 [21;18H[?25h[?25l[40;116H2,0-1[22;1H[?25h[?25l[40;116H3,13-9[23;9H[?25h[?25l[40;116H4,0-1 [24;1H[?25h[?25l[40;116H5,12 [25;12H[?25h[?25l[40;116H6,2[26;22H[?25h[?25l[40;116H7,19[27;19H[?25h[?25l[40;116H8[28;19H[?25h[?25l[40;116H9,0-1[29;1H[?25h[?25l[40;115H30,43-29[30;29H[?25h[?25l[40;116H1,0-1  [31;1H[?25h[?25l[40;116H2,10-9[32;9H[?25h[?25l[40;116H3,0-1 [33;1H[?25h[?25l[40;116H4,13-9[34;9H[?25h[?25l[40;116H5,0-1 [35;1H[?25h[?25l[36;9H[46m([18C)[m[40;116H6,35-28[36;28H[?25h[?25l[36;9H([18C)
+    [46m{[39;5H}[m[40;116H7,5    [37;5H[?25h[?25l{[39;5H}[40;116H8,18-15[38;15H[?25h[?25l[37;5H[46m{[39;5H}[m[40;116H9,5    [39;5H[?25h[?25l[1;39r[39;1H
+[1;40r[36;5H{[38;5H}[40;115H[K[40;115H40,0-1[9C0%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H执行顺序：[40;115H[K[40;115H41,13-9[8C1%[39;9H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H42,0-1[9C2%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H[93m1.[m 执行初始化[40;115H[K[40;115H43,16-12[7C3%[39;12H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H[93m2.[m 判断条件[40;115H[K[40;115H44,13-10[7C4%[39;10H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H[93m3.[m 条件为真时执行循环体[40;115H[K[40;115H45,31-22[7C5%[39;22H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H[93m4.[m 执行更新[40;115H[K[40;115H46,13-10[7C6%[39;10H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H[93m5.[m 返回条件判断[40;115H[K[40;115H47,19-14[7C7%[39;14H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H48,0-1[9C8%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H[38;5;224m##[m[38;5;225m 从1开始遍历argv[m[40;115H[K[40;115H49,23-18[7C9%[39;18H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H50,0-1[8C10%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;5Hfor [46m([mi = 1; i < argc; i++[46m)[m[40;115H[K[40;115H51,30[9C11%[39;30H[?25h[?25l[1;39r[39;1H
+[1;40r[38;9H([20C)[40;115H[K[40;115H52,0-1[8C12%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H跳过了[38;5;224m`[margv[0][38;5;224m`[m，因为它通常是程序名称。[40;115H[K[40;115H53,52-38      13%[39;38H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H54,0-1[8C14%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H从0开始也是合法的，只是会同时输出程序名。[40;115H[K[40;115H55,59-40      15%[39;40H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H56,0-1[8C16%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H[38;5;224m##[m[38;5;225m 字符串数组[m[40;115H[K[40;115H57,16-12      17%[39;12H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H58,0-1[8C18%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;5Hchar *states[] = {[40;115H[K[40;115H59,22[9C19%[39;22H[?25h[?25l[1;39r[39;1H
+[1;40r[39;9H"California",[40;115H[K[40;115H60,21[9C20%[39;21H[?25h[?25l[1;39r[39;1H
+[1;40r[39;9H"Oregon",[40;115H[K[40;115H61,17[9C21%[39;17H[?25h[?25l[1;39r[39;1H
+[1;40r[39;9H"Washington",[40;115H[K[40;115H62,21[9C22%[39;21H[?25h[?25l[1;39r[39;1H
+[1;40r[39;9H"Texas"[40;115H[K[40;115H63,15[9C23%[39;15H[?25h[?25l[1;39r[39;1H
+[1;40r[39;5H};[40;115H[K[40;115H64,6[10C24%[39;6H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H65,0-1[8C25%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H[38;5;224m`[mstates[38;5;224m`[m是一个指针数组，每个元素都指向一个C字符串。[40;115H[K[40;115H66,61-44      25%[39;44H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H67,0-1[8C26%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;5Hstates[46m[[m0[46m][m[40;115H[K[40;115H68,13[9C27%[39;13H[?25h[?25l[1;39r[39;1H
+[1;40r[38;11H[0][40;115H[K[40;115H69,0-1[8C28%[39;1H[?25h[?25l[38;11H[46m[[m0[46m][m[40;116H8,13 [38;13H[?25h[?25l[0][40;116H7,0-1[37;1H[?25h[?25l[40;116H6,61-44[36;44H[?25h[?25l[40;116H5,0-1  [35;1H[?25h[?25l[40;116H6,61-44[36;44H[?25h[?25l[40;116H7,0-1  [37;1H[?25h[?25l[38;11H[46m[[m0[46m][m[40;116H8,13 [38;13H[?25h[?25l[0][40;116H9,0-1[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H是第一个字符串。[40;115H[K[40;115H70,22-15      29%[39;15H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H71,0-1[8C30%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;5Hstates[0][46m[[m0[46m][m[40;115H[K[40;115H72,16[9C31%[39;16H[?25h[?25l[1;39r[39;1H
+[1;40r[38;14H[0][40;115H[K[40;115H73,0-1[8C32%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H是第一个字符串的第一个字符。[40;115H[K[40;115H74,40-27      33%[39;27H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H75,0-1[8C34%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H[38;5;224m##[m[38;5;225m 数组越界实验[m[40;115H[K[40;115H76,19-14      35%[39;14H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H77,0-1[8C36%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H将[38;5;224m`[mnum_states[38;5;224m`[m从4改为10后，循环会访问不存在的元素。[40;115H[K[40;115H78,58-44      37%[39;44H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H79,0-1[8C38%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H在64位系统中，Valgrind可能报告：[40;115H[K[40;115H80,41-31      39%[39;31H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H81,0-1[8C40%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;5HInvalid read of size 8[40;115H[K[40;115H82,26[9C41%[39;26H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H83,0-1[8C42%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H因为字符串数组的每个元素通常是一个8字节指针。[40;115H[K[40;115H84,65-44      43%[39;44H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H85,0-1[8C44%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H垃圾指针被传给[38;5;224m`[m%s[38;5;224m`[m后，还可能产生：[40;115H[K[40;115H86,47-33      45%[39;33H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H87,0-1[8C46%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;5HInvalid read of size 1[40;115H[K[40;115H88,26[9C47%[39;26H[?25h[?25l[1;39r[39;1H
+[1;40r[39;5HSegmentation fault[40;115H[K[40;115H89,22[9C48%[39;22H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H90,0-1[8C49%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H[38;5;224m##[m[38;5;225m for中的逗号[m[40;115H[K[40;115H91,16-13      50%[39;13H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H92,0-1[8C50%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H可以在初始化和更新区域使用逗号执行多个表达式：[40;115H[K[40;115H93,67-45      51%[39;45H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H94,0-1[8C52%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;5Hfor [46m([mi = 0, j = 10; i < j; i++, j--[46m)[m[40;115H[K[40;115H95,40[9C53%[39;40H[?25h[?25l[1;39r[39;1H
+[1;40r[38;9H([30C)[40;115H[K[40;115H96,0-1[8C54%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H三个主要区域仍然使用分号分隔。[40;115H[K[40;115H97,43-29      55%[39;29H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H98,0-1[8C56%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H[38;5;224m##[m[38;5;225m NULL[m[40;115H[K[40;115H99,7[10C57%[39;7H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H100,0-1[7C58%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H[38;5;224m`[mNULL[38;5;224m`[m表示空指针，不指向有效对象。[40;115H[K[40;115H101,46-33     59%[39;33H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H102,0-1[7C60%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H将[38;5;224m`[mNULL[38;5;224m`[m直接传给[38;5;224m`[m%s[38;5;224m`[m属于未定义行为。某些系统可能输出[38;5;224m`[m(null)[38;5;224m`[m，另一些系统可能崩溃。[40;115H[K[40;115H103,62-45     61%[39;45H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H104,0-1[7C62%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H安全使用前应检查：[40;115H[K[40;115H105,25-17     63%[39;17H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H106,0-1[7C64%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;5Hif [46m([mstates[i] != NULL[46m)[m[40;115H[K[40;115H107,26[8C65%[39;26H[?25h[?25l[1;39r[39;1H
+[1;40r[38;8H([17C)[40;115H[K[40;115H108,0-1[7C66%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H[38;5;224m##[m[38;5;225m states和argv赋值[m[40;115H[K[40;115H109,20-18     67%[39;18H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H110,0-1[7C68%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;5Hstates[0] = argv[1];[40;115H[K[40;115H111,24[8C69%[39;24H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H112,0-1[7C70%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H只改变指针指向，不复制字符串内容。[40;115H[K[40;115H113,49-33     71%[39;33H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H114,0-1[7C72%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H反过来：[40;115H[K[40;115H115,10-7      73%[39;7H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H116,0-1[7C74%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;5Hargv[1] = states[0];[40;115H[K[40;115H117,24[8C75%[39;24H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H118,0-1[7C75%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H也是指针赋值。[40;115H[K[40;115H119,19-13     76%[39;13H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H120,0-1[7C77%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H访问[38;5;224m`[margv[1][38;5;224m`[m前必须先确认：[40;115H[K[40;115H121,34-26     78%[39;26H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H122,0-1[7C79%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;5Hargc > 1[40;115H[K[40;115H123,12[8C80%[39;12H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H124,0-1[7C81%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H[38;5;224m##[m[38;5;225m 参数数量[m[40;115H[K[40;115H125,13-10     82%[39;10H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H126,0-1[7C83%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H只要循环条件使用[38;5;224m`[mi < argc[38;5;224m`[m，传入大量参数通常不会造成数组越界。[40;115H[K[40;115H127,62-45     84%[39;45H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H128,0-1[7C85%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H操作系统会准确设置[38;5;224m`[margc[38;5;224m`[m，并且命令行总长度还受[38;5;224m`[mARG_MAX[38;5;224m`[m限制。[40;115H[K[40;115H129,64-45     86%[39;45H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H130,0-1[7C87%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H[38;5;224m##[m[38;5;225m Valgrind结果[m[40;115H[K[40;115H131,15-14     88%[39;14H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H132,0-1[7C89%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H最终正确版本应显示：[40;115H[K[40;115H133,28-19     90%[39;19H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H134,0-1[7C91%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;5HERROR SUMMARY: 0 errors from 0 contexts[40;115H[K[40;115H135,43[8C92%[39;43H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H136,0-1[7C93%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H[38;5;224m##[m[38;5;225m 本题总结[m[40;115H[K[40;115H137,13-10     94%[39;10H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H138,0-1[7C95%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H[38;5;224m`[margv[38;5;224m`[m本身就是一个字符串数组。[40;115H[K[40;115H139,40-29     96%[39;29H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H140,0-1[7C97%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1Hfor循环通过初始化、条件判断和更新重复执行代码。[40;115H[K[40;115H141,64-44     98%[39;44H[?25h[?25l[1;39r[39;1H
+[1;40r[40;115H[K[40;115H142,0-1[7C99%[39;1H[?25h[?25l[1;39r[39;1H
+[1;40r[39;1H遍历数组时必须保证循环上限与真实元素数量一致。[40;115H[K[40;115H143,67-45     Bot[39;45H[?25h[?25l[40;115H[K[40;1H:[?25hwq[?25l[?2004l[>4;m"README.md" [New] 143L, 2676B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex10[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex10[00m$ exit
+[?2004lexit
+
+Script done on 2026-07-13 20:31:35+08:00 [COMMAND_EXIT_CODE="0"]
