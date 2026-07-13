@@ -1,0 +1,18 @@
+You are 100 miles away.
+You have 2.345000 levels of power.
+You have 56789.453200 awesome super powers.
+I have an initial A.
+I have a first name Zed.
+I have a last name Shaw.
+My whole name is Zed A. Shaw.
+Distance in decimal: 100
+Distance in octal: 144
+Distance in hexadecimal: 64
+Distance in uppercase hexadecimal: 64
+With prefixes: 0144, 0x64, 0X64
+Power with 2 decimal places: 2.35
+Power in scientific notation: 2.345000e+00
+Power in compact notation: 2.345
+Distance padded with spaces:      100
+Distance padded with zeros: 00000100
+Empty string: ''

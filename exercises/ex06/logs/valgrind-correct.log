@@ -1,0 +1,21 @@
+==35303== Memcheck, a memory error detector
+==35303== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==35303== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==35303== Command: ./ex6
+==35303== 
+You are 100 miles away.
+You have 2.345000 levels of power.
+You have 56789.453200 awesome super powers.
+I have an initial A.
+I have a first name Zed.
+I have a last name Shaw.
+My whole name is Zed A. Shaw.
+==35303== 
+==35303== HEAP SUMMARY:
+==35303==     in use at exit: 0 bytes in 0 blocks
+==35303==   total heap usage: 1 allocs, 1 frees, 4,096 bytes allocated
+==35303== 
+==35303== All heap blocks were freed -- no leaks are possible
+==35303== 
+==35303== For lists of detected and suppressed errors, rerun with: -s
+==35303== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

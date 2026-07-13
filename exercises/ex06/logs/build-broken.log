@@ -1,0 +1,14 @@
+cc -Wall -Wextra -g    ex6.c   -o ex6
+ex6.c: In function ‘main’:
+ex6.c:21:35: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+   21 |         printf("My whole name is %s %c. %s.\n",initial,first_name,last_name);
+      |                                  ~^            ~~~~~~~
+      |                                   |            |
+      |                                   char *       int
+      |                                  %d
+ex6.c:21:38: warning: format ‘%c’ expects argument of type ‘int’, but argument 3 has type ‘char *’ [-Wformat=]
+   21 |         printf("My whole name is %s %c. %s.\n",initial,first_name,last_name);
+      |                                     ~^                 ~~~~~~~~~~
+      |                                      |                 |
+      |                                      int               char *
+      |                                     %s

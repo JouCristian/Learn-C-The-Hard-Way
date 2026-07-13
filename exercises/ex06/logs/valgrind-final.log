@@ -1,0 +1,32 @@
+==35566== Memcheck, a memory error detector
+==35566== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==35566== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==35566== Command: ./ex6
+==35566== 
+You are 100 miles away.
+You have 2.345000 levels of power.
+You have 56789.453200 awesome super powers.
+I have an initial A.
+I have a first name Zed.
+I have a last name Shaw.
+My whole name is Zed A. Shaw.
+Distance in decimal: 100
+Distance in octal: 144
+Distance in hexadecimal: 64
+Distance in uppercase hexadecimal: 64
+With prefixes: 0144, 0x64, 0X64
+Power with 2 decimal places: 2.35
+Power in scientific notation: 2.345000e+00
+Power in compact notation: 2.345
+Distance padded with spaces:      100
+Distance padded with zeros: 00000100
+Empty string: ''
+==35566== 
+==35566== HEAP SUMMARY:
+==35566==     in use at exit: 0 bytes in 0 blocks
+==35566==   total heap usage: 1 allocs, 1 frees, 4,096 bytes allocated
+==35566== 
+==35566== All heap blocks were freed -- no leaks are possible
+==35566== 
+==35566== For lists of detected and suppressed errors, rerun with: -s
+==35566== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
