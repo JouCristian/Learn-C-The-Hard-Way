@@ -1,0 +1,26 @@
+Arguments in reverse:
+arg 5: Chengdu
+arg 4: Shenzhen
+arg 3: Shanghai
+arg 2: Beijing
+arg 1: Sichuan
+arg 0: ./ex11_extra
+States in reverse:
+state 3: Texas
+state 2: Washington
+state 1: Oregon
+state 0: California
+Copy argv pointers into states:
+states[0] = Sichuan
+states address: 0x7ffd105a0255, argv address: 0x7ffd105a0255
+states[1] = Beijing
+states address: 0x7ffd105a025d, argv address: 0x7ffd105a025d
+states[2] = Shanghai
+states address: 0x7ffd105a0265, argv address: 0x7ffd105a0265
+states[3] = Shenzhen
+states address: 0x7ffd105a026e, argv address: 0x7ffd105a026e
+States after assignment:
+state 0: Sichuan
+state 1: Beijing
+state 2: Shanghai
+state 3: Shenzhen

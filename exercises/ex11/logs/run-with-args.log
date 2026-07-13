@@ -1,0 +1,8 @@
+arg 0: ./ex11
+arg 1: test
+arg 2: it
+arg 3: hello world
+state 0: California
+state 1: Oregon
+state 2: Washington
+state 3: Texas

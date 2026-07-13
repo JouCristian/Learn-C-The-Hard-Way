@@ -1,0 +1,3 @@
+rm -f ex11 ex11_extra
+cc -Wall -Wextra -g    ex11.c   -o ex11
+cc -Wall -Wextra -g    ex11_extra.c   -o ex11_extra
