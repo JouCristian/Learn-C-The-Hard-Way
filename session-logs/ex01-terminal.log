@@ -6661,4 +6661,66 @@ Script done.
 [31m??[m ./
 [31m??[m ../../session-logs/ex08-terminal.log
 [?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex08[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex08[00m$ git ..
-[?2004lg
+[?2004lgit: '..' is not a git command. See 'git --help'.
+
+The most similar commands are
+	am
+	gc
+	mv
+	rm
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way/exercises/ex08[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way/exercises/ex08[00m$  [Kg[Kcd ../..
+[?2004l[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way[00m$ git add .
+[?2004l[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way[00m$ iu[K[Kgit status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   exercises/ex08/Makefile[m
+	[32mnew file:   exercises/ex08/README.md[m
+	[32mnew file:   exercises/ex08/ex8[m
+	[32mnew file:   exercises/ex08/ex8.c[m
+	[32mnew file:   exercises/ex08/logs/build-final.log[m
+	[32mnew file:   exercises/ex08/logs/build-global-no-null.log[m
+	[32mnew file:   exercises/ex08/logs/build-no-null.log[m
+	[32mnew file:   exercises/ex08/logs/build-out-of-bounds.log[m
+	[32mnew file:   exercises/ex08/logs/build.log[m
+	[32mnew file:   exercises/ex08/logs/run-final.log[m
+	[32mnew file:   exercises/ex08/logs/run-modified.log[m
+	[32mnew file:   exercises/ex08/logs/run-no-null.log[m
+	[32mnew file:   exercises/ex08/logs/run-out-of-bounds.log[m
+	[32mnew file:   exercises/ex08/logs/run.log[m
+	[32mnew file:   exercises/ex08/logs/valgrind-correct.log[m
+	[32mnew file:   exercises/ex08/logs/valgrind-final.log[m
+	[32mnew file:   exercises/ex08/logs/valgrind-global-no-null.log[m
+	[32mnew file:   exercises/ex08/logs/valgrind-no-null.log[m
+	[32mnew file:   exercises/ex08/logs/valgrind-out-of-bounds.log[m
+	[32mmodified:   session-logs/ex01-terminal.log[m
+	[32mnew file:   session-logs/ex08-terminal.log[m
+
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way[00m$ git commit -,[Km"" ""[Cw"a"n"[1P"[1P"[1P"完成"了"练习"8","x"u"[1P"[1P"学习了"sizeof"和"[2P"、"数组"和"C"字符串"。"[C
+[?2004l[main 4745bb6] 完成了练习8,学习了sizeof、数组和C字符串。
+ 21 files changed, 1898 insertions(+), 1 deletion(-)
+ create mode 100644 exercises/ex08/Makefile
+ create mode 100644 exercises/ex08/README.md
+ create mode 100755 exercises/ex08/ex8
+ create mode 100644 exercises/ex08/ex8.c
+ create mode 100644 exercises/ex08/logs/build-final.log
+ create mode 100644 exercises/ex08/logs/build-global-no-null.log
+ create mode 100644 exercises/ex08/logs/build-no-null.log
+ create mode 100644 exercises/ex08/logs/build-out-of-bounds.log
+ create mode 100644 exercises/ex08/logs/build.log
+ create mode 100644 exercises/ex08/logs/run-final.log
+ create mode 100644 exercises/ex08/logs/run-modified.log
+ create mode 100644 exercises/ex08/logs/run-no-null.log
+ create mode 100644 exercises/ex08/logs/run-out-of-bounds.log
+ create mode 100644 exercises/ex08/logs/run.log
+ create mode 100644 exercises/ex08/logs/valgrind-correct.log
+ create mode 100644 exercises/ex08/logs/valgrind-final.log
+ create mode 100644 exercises/ex08/logs/valgrind-global-no-null.log
+ create mode 100644 exercises/ex08/logs/valgrind-no-null.log
+ create mode 100644 exercises/ex08/logs/valgrind-out-of-bounds.log
+ create mode 100644 session-logs/ex08-terminal.log
+[?2004h]0;joujou@ysyxDev: ~/Practice/learn-c-the-hard-way[01;32mjoujou@ysyxDev[00m:[01;34m~/Practice/learn-c-the-hard-way[00m$ git push
+[?2004lEnumerating objects: 26, done.
+Counting objects:   3% (1/26)Counting objects:   7% (2/26)Counting objects:  11% (3/26)Counting objects:  15% (4/26)Counting objects:  19% (5/26)Counting objects:  23% (6/26)Counting objects:  26% (7/26)Counting objects:  30% (8/26)Counting objects:  34% (9/26)Counting objects:  38% (10/26)Counting objects:  42% (11/26)Counting objects:  46% (12/26)Countin
