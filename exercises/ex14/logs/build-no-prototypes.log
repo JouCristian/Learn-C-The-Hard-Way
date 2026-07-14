@@ -1,0 +1,15 @@
+ex14_no_prototypes.c: In function ‘print_arguments’:
+ex14_no_prototypes.c:14:9: warning: implicit declaration of function ‘print_letters’ [-Wimplicit-function-declaration]
+   14 |         print_letters(argv[i]);
+      |         ^~~~~~~~~~~~~
+ex14_no_prototypes.c: At top level:
+ex14_no_prototypes.c:18:6: warning: conflicting types for ‘print_letters’; have ‘void(const char *)’
+   18 | void print_letters(const char arg[])
+      |      ^~~~~~~~~~~~~
+ex14_no_prototypes.c:14:9: note: previous implicit declaration of ‘print_letters’ with type ‘void(const char *)’
+   14 |         print_letters(argv[i]);
+      |         ^~~~~~~~~~~~~
+ex14_no_prototypes.c: In function ‘print_letters’:
+ex14_no_prototypes.c:30:13: warning: implicit declaration of function ‘can_print_it’ [-Wimplicit-function-declaration]
+   30 |         if (can_print_it(ch))
+      |             ^~~~~~~~~~~~

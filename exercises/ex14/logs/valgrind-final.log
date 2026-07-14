@@ -1,0 +1,18 @@
+==50677== Memcheck, a memory error detector
+==50677== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==50677== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==50677== Command: ./ex14 hello C\ functions 123
+==50677== 
+'e' == 101 'x' == 120 
+'h' == 104 'e' == 101 'l' == 108 'l' == 108 'o' == 111 
+'C' == 67 ' ' == 32 'f' == 102 'u' == 117 'n' == 110 'c' == 99 't' == 116 'i' == 105 'o' == 111 'n' == 110 's' == 115 
+
+==50677== 
+==50677== HEAP SUMMARY:
+==50677==     in use at exit: 0 bytes in 0 blocks
+==50677==   total heap usage: 1 allocs, 1 frees, 4,096 bytes allocated
+==50677== 
+==50677== All heap blocks were freed -- no leaks are possible
+==50677== 
+==50677== For lists of detected and suppressed errors, rerun with: -s
+==50677== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

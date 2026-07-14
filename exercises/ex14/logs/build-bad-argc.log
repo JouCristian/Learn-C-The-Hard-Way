@@ -1,0 +1,7 @@
+ex14_bad_argc.c:8:31: error: expected ‘;’, ‘,’ or ‘)’ before ‘+’ token
+    8 | void print_arguments(int argc + 1, char *argv[])
+      |                               ^
+ex14_bad_argc.c: In function ‘main’:
+ex14_bad_argc.c:46:5: warning: implicit declaration of function ‘print_arguments’ [-Wimplicit-function-declaration]
+   46 |     print_arguments(argc, argv);
+      |     ^~~~~~~~~~~~~~~
