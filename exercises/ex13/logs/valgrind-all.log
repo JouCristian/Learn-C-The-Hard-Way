@@ -1,0 +1,29 @@
+==49853== Memcheck, a memory error detector
+==49853== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==49853== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==49853== Command: ./ex13_all Zed Shaw Linux
+==49853== 
+Argument 1: Zed
+  0: Z is not a vowel
+  1: 'E'
+  2: d is not a vowel
+Argument 2: Shaw
+  0: S is not a vowel
+  1: h is not a vowel
+  2: 'A'
+  3: w is not a vowel
+Argument 3: Linux
+  0: L is not a vowel
+  1: 'I'
+  2: n is not a vowel
+  3: 'U'
+  4: x is not a vowel
+==49853== 
+==49853== HEAP SUMMARY:
+==49853==     in use at exit: 0 bytes in 0 blocks
+==49853==   total heap usage: 1 allocs, 1 frees, 4,096 bytes allocated
+==49853== 
+==49853== All heap blocks were freed -- no leaks are possible
+==49853== 
+==49853== For lists of detected and suppressed errors, rerun with: -s
+==49853== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

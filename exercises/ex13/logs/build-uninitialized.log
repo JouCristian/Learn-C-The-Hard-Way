@@ -1,0 +1,4 @@
+ex13_uninitialized.c: In function ‘main’:
+ex13_uninitialized.c:7:5: warning: ‘letter’ is used uninitialized [-Wuninitialized]
+    7 |     switch (letter)
+      |     ^~~~~~

@@ -1,0 +1,7 @@
+ex13.c: In function ‘main’:
+ex13.c:26:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
+   26 |                 printf("%d: 'E'\n", i);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~
+ex13.c:29:13: note: here
+   29 |             case 'i':
+      |             ^~~~

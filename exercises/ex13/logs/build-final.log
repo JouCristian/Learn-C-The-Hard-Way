@@ -1,0 +1,8 @@
+rm -f ex13 ex13_all ex13_uninitialized
+cc -Wall -Wextra -g    ex13.c   -o ex13
+cc -Wall -Wextra -g    ex13_all.c   -o ex13_all
+cc -Wall -Wextra -g    ex13_uninitialized.c   -o ex13_uninitialized
+ex13_uninitialized.c: In function ‘main’:
+ex13_uninitialized.c:7:5: warning: ‘letter’ is used uninitialized [-Wuninitialized]
+    7 |     switch (letter)
+      |     ^~~~~~
