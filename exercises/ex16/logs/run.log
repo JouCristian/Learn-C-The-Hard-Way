@@ -1,0 +1,12 @@
+Joe is at memory location 0x5b74082ca2a0:
+Frank is at memory location 0x5b74082ca2e0:
+--- Joe after changes ---
+Name: Joe Alex
+	Age: 52
+	Height: 62
+	Weight: 180
+--- Frank after changes ---
+Name: Frank Blank
+	Age: 40
+	Height: 72
+	Weight: 200

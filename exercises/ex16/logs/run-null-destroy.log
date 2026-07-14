@@ -1,0 +1,1 @@
+ex16: ex16.c:33: Person_destroy: Assertion `who != NULL' failed.

@@ -1,0 +1,4 @@
+rm -f ex16 ex16_stack ex16_layout ex16_null
+cc -Wall -Wextra -g    ex16.c   -o ex16
+cc -Wall -Wextra -g    ex16_stack.c   -o ex16_stack
+cc -Wall -Wextra -g    ex16_layout.c   -o ex16_layout

@@ -1,0 +1,7 @@
+sizeof(char *) = 8
+sizeof(int) = 4
+sizeof(struct Person) = 24
+offset of name = 0
+offset of age = 8
+offset of height = 12
+offset of weight = 16
