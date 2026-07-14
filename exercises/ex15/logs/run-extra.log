@@ -1,0 +1,26 @@
+Alan is 23 years old.
+Frank is 43 years old.
+Mary is 12 years old.
+John is 89 years old.
+Lisa is 2 years old.
+--- addresses ---
+ages[0]: address=0x7ffd6b81fc40 value=23
+names[0]: pointer-slot=0x7ffd6b81fc60 string=0x640645d6501d value=Alan
+ages[1]: address=0x7ffd6b81fc44 value=43
+names[1]: pointer-slot=0x7ffd6b81fc68 string=0x640645d65022 value=Frank
+ages[2]: address=0x7ffd6b81fc48 value=12
+names[2]: pointer-slot=0x7ffd6b81fc70 string=0x640645d65028 value=Mary
+ages[3]: address=0x7ffd6b81fc4c value=89
+names[3]: pointer-slot=0x7ffd6b81fc78 string=0x640645d6502d value=John
+ages[4]: address=0x7ffd6b81fc50 value=2
+names[4]: pointer-slot=0x7ffd6b81fc80 string=0x640645d65032 value=Lisa
+--- reverse using pointers ---
+Lisa is 2 years old.
+John is 89 years old.
+Mary is 12 years old.
+Frank is 43 years old.
+Alan is 23 years old.
+--- command-line arguments using pointers ---
+argument address=0x7ffd6b82025e, string=./ex15_extra
+argument address=0x7ffd6b82026b, string=hello
+argument address=0x7ffd6b820271, string=pointer world

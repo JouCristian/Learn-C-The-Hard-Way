@@ -1,0 +1,3 @@
+rm -f ex15 ex15_extra ex15_bad_pointer
+cc -Wall -Wextra -g    ex15.c   -o ex15
+cc -Wall -Wextra -g    ex15_extra.c   -o ex15_extra

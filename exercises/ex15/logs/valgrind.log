@@ -1,0 +1,37 @@
+==51279== Memcheck, a memory error detector
+==51279== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==51279== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==51279== Command: ./ex15
+==51279== 
+Alan has 23 years alive.
+Jou has 43 years alive.
+Mary has 12 years alive.
+Jack has 89 years alive.
+Lisa has 2 years alive.
+---
+Alan is 23 years old.
+Jou is 43 years old.
+Mary is 12 years old.
+Jack is 89 years old.
+Lisa is 2 years old.
+---
+Alan is 23 years old again.
+Jou is 43 years old again.
+Mary is 12 years old again.
+Jack is 89 years old again.
+Lisa is 2 years old again.
+---
+Alan lived 23 years so far.
+Jou lived 43 years so far.
+Mary lived 12 years so far.
+Jack lived 89 years so far.
+Lisa lived 2 years so far.
+==51279== 
+==51279== HEAP SUMMARY:
+==51279==     in use at exit: 0 bytes in 0 blocks
+==51279==   total heap usage: 1 allocs, 1 frees, 4,096 bytes allocated
+==51279== 
+==51279== All heap blocks were freed -- no leaks are possible
+==51279== 
+==51279== For lists of detected and suppressed errors, rerun with: -s
+==51279== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
