@@ -1,0 +1,13 @@
+[1] Create database
+[2] Add records
+[3] List records
+1 zed zed@example.com
+2 frank frank@example.com
+3 joe joe@example.com
+[4] Get record
+2 frank frank@example.com
+[5] Delete record
+1 zed zed@example.com
+2 frank frank@example.com
+[6] Reject invalid ID
+All tests passed.

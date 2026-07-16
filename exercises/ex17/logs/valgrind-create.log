@@ -1,0 +1,14 @@
+==60540== Memcheck, a memory error detector
+==60540== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==60540== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==60540== Command: ./ex17 valgrind-db.dat c
+==60540== 
+==60540== 
+==60540== HEAP SUMMARY:
+==60540==     in use at exit: 0 bytes in 0 blocks
+==60540==   total heap usage: 4 allocs, 4 frees, 107,784 bytes allocated
+==60540== 
+==60540== All heap blocks were freed -- no leaks are possible
+==60540== 
+==60540== For lists of detected and suppressed errors, rerun with: -s
+==60540== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

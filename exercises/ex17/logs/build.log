@@ -1,0 +1,1 @@
+cc -Wall -Wextra -g    ex17.c   -o ex17

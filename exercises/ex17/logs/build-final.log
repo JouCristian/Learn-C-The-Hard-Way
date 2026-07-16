@@ -1,0 +1,3 @@
+rm -f ex17 ex17_layout
+cc -Wall -Wextra -g    ex17.c   -o ex17
+cc -Wall -Wextra -g    ex17_layout.c   -o ex17_layout

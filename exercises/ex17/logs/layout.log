@@ -1,0 +1,8 @@
+sizeof(int) = 4
+sizeof(struct Address) = 1032
+offset of id = 0
+offset of set = 4
+offset of name = 8
+offset of email = 520
+sizeof(struct Database) = 103200
+sizeof(struct Connection) = 16
