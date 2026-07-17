@@ -1,0 +1,1 @@
+gcc -Wall -Wextra -g -std=gnu11 -DNDEBUG ex20.c -o ex20_release

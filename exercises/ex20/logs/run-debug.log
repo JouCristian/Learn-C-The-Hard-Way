@@ -1,0 +1,13 @@
+[DEBUG] (ex20.c:25:test_debug) I have brown hair.
+[DEBUG] (ex20.c:30:test_debug) I am 37 years old.
+[ERROR] (ex20.c:41:test_log_err: errno: None) I believe everything is broken.
+[ERROR] (ex20.c:46:test_log_err: errno: None) There are 0 problems in space.
+[WARN] (ex20.c:59:test_log_warn: errno: None) You can safely ignore this.
+[WARN] (ex20.c:64:test_log_warn: errno: None) Maybe consider looking at: /etc/passwd.
+[INFO] (ex20.c:76:test_log_info) Well, I did something mundane.
+[INFO] (ex20.c:81:test_log_info) It happened 1.300000 times today.
+[ERROR] (ex20.c:141:test_check: errno: No such file or directory) Failed to open definitely-not-exist.txt.
+[INFO] (ex20.c:239:test_sentinel) It worked.
+[ERROR] (ex20.c:246:test_sentinel: errno: None) I should not run.
+[ERROR] (ex20.c:293:test_check_mem: errno: None) Out of memory.
+[DEBUG] (ex20.c:332:test_check_debug) Oops, i was 0.
