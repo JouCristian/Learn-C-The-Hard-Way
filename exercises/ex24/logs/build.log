@@ -1,0 +1,1 @@
+gcc -Wall -Wextra -g -std=gnu11 ex24.c -o ex24
