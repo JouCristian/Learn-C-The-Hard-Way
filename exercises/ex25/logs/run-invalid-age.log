@@ -1,0 +1,3 @@
+What's your first name? What's your initial? What's your last name? How old are you? [DEBUG] (ex25.c:302:read_int: errno: None)Input is not an integer.
+[DEBUG] (ex25.c:567:read_scan: errno: None)Failed to read int.
+[DEBUG] (ex25.c:849:main: errno: None)Failed to read age.

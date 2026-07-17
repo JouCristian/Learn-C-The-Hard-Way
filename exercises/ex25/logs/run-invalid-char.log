@@ -1,0 +1,3 @@
+What's your first name? What's your initial? [DEBUG] (ex25.c:412:read_char: errno: None)Enter exactly one character.
+[DEBUG] (ex25.c:595:read_scan: errno: None)Failed to read char.
+[DEBUG] (ex25.c:798:main: errno: None)Failed to read initial.
