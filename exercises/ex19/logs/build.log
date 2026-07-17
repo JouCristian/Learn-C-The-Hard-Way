@@ -1,0 +1,3 @@
+gcc -Wall -Wextra -g -c ex19.c -o ex19.o
+gcc -Wall -Wextra -g -c object.c -o object.o
+gcc -Wall -Wextra -g ex19.o object.o -o ex19
